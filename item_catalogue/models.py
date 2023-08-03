@@ -1,0 +1,23 @@
+from django.db import models
+
+
+ITEM_TYPE = (
+    (0, 'Necklaces'), (1, 'Bags'), (2, 'Rings'), (3, 'Bracelets'), (4, 'New'))
+
+# Model for Items
+Class ProductItem(models.Model):
+    """
+    Product item model
+    """
+    item_id = models.AutoField(primary_key=True)
+    item_name = models.CharField(max_length=50, unique=True)
+    description = models.CharField(max_length=200, unique=True)
+    price = models.FloatField()
+    item_type = models.IntegerField(choices=ITEM_TYPE, default=4)
+    available = models.BooleanField(default=False)
+
+    class Meta:
+        ordering = ['-available']
+
+    def __str__(self):
+        return self.item_name
