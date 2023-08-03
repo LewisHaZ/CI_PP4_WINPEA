@@ -4,8 +4,9 @@ from django.db import models
 ITEM_TYPE = (
     (0, 'Necklaces'), (1, 'Bags'), (2, 'Rings'), (3, 'Bracelets'), (4, 'New'))
 
+
 # Model for Items
-Class ProductItem(models.Model):
+class ProductItem(models.Model):
     """
     Product item model
     """
