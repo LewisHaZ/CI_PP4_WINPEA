@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['8000-lewishaz-cipp4winpea-mzbticeyhxd.ws-eu102.gitpod.io', 'ci_pp4_winpea.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['winpea-world.herokuapp.com', 'localhost', '8000-lewishaz-cipp4winpea-mzbticeyhxd.ws-eu102.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-lewishaz-cipp4winpea-mzbticeyhxd.ws-eu102.gitpod.io', 'https://www.heroku.com/']
 
