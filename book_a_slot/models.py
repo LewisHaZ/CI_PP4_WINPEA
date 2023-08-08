@@ -85,6 +85,7 @@ class Booking(models.Model):
         (4, "4 people"),
         (5, "5 people"),
     )
+    people_count = models.IntegerField(choices=slots, default=2)
 
     class Meta:
         ordering = ['-requested_time']
