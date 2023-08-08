@@ -18,6 +18,3 @@ class ProductList(generic.ListView):
     model = ProductItem
     queryset = ProductItem.objects.filter(available=1).order_by('-item_type')
     template_name = 'catalogue.html'
-
-
-
