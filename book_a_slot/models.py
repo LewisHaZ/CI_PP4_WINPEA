@@ -1,5 +1,6 @@
 from django.db import models
 
+#  The store opens at middday and closes at 6PM each day.
 time_slots = (
     ('12:00', '12:00'),
     ('12:30', '12:30'),
@@ -13,6 +14,14 @@ time_slots = (
     ('16:30', '16:30'),
     ('17:00', '17:00'),
     ('17:30', '17:30'),
+)
+
+# Status of the bookings
+status_options = (
+    ('awaiting confirmation', 'awaiting confirmation'),
+    ('booking accepted', 'booking accepted'),
+    ('booking declined', 'booking declined'),
+    ('booking expired', 'booking expired'),
 )
 
 
