@@ -1,4 +1,5 @@
 from django.db import models
+from phonenumber_field.modelfields import PhoneNumberField
 
 #  The store opens at middday and closes at 6PM each day.
 time_slots = (
@@ -55,13 +56,29 @@ class Booking(models.Model):
         null=True)
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name='user', null=True)
-    status = models.CharField(max_length=25, unique=True)
+    status = models.CharField(
+        max_length=25, choices=status_options, default='awaiting confirmation',
+        unique=True)
 
     class Meta:
         ordering = ['-requested_time']
-  
+
     def __str__(self):
         return self.booking_id
-  
+
 
 class User(models.Model):
+    """
+    a class for the User model
+    """
+    user_id = models.AutoField(primary_key=True)
+    created_date = models.DateTimeField(auto_now_add=True)
+    name = models.CharField(max_length=80)
+    email = models.EmailField(max_length=254, default="")
+    phone =
+
+    class Meta:
+        ordering = ['-created_date']
+
+    def __str__(self):
+        return self.user_id
