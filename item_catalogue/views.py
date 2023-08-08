@@ -16,5 +16,19 @@ class ProductList(generic.ListView):
     in the catalogue
     """
     model = ProductItem
-    queryset = ProductItem.objects.filter(available=1).order_by('-item_type')
     template_name = 'catalogue.html'
+    context = "product_item"
+
+    def get_queryset(self):
+        queryset = {
+            'product_bags': ProductItem.objects.all().filter(
+                available=True, product_type=0
+            ),
+            'product_necklaces': ProductItem.objects.all().filter(
+                available=True, product_type=1
+            ),
+            'product_rings': ProductItem.objects.all().filter(
+                available=True, product_type=2
+            )
+        }
+        return queryset
