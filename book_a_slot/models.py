@@ -1,5 +1,7 @@
+# 3rd party:
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #  The store opens at middday and closes at 6PM each day.
 time_slots = (
@@ -26,7 +28,7 @@ status_options = (
 )
 
 
-class Slot(models.Slot):
+class Slot(models.Model):
     """
     a class for the slot model
     """
