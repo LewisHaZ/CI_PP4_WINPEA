@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'phonenumber_field',
     'django_summernote',
+    'rangefilter',
     'book_a_slot',
     'item_catalogue',
 ]
