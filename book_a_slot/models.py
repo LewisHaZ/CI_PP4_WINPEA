@@ -21,10 +21,10 @@ time_slots = (
 
 # Status of the bookings
 status_options = (
-    ('awaiting confirmation', 'awaiting confirmation'),
-    ('booking accepted', 'booking accepted'),
-    ('booking declined', 'booking declined'),
-    ('booking expired', 'booking expired'),
+    ('Awaiting confirmation', 'Awaiting confirmation'),
+    ('Booking accepted', 'Booking accepted'),
+    ('Booking declined', 'Booking declined'),
+    ('Booking expired', 'Booking expired'),
 )
 
 
@@ -35,7 +35,7 @@ class Slot(models.Model):
     slot_id = models.AutoField(primary_key=True)
     slot_name = models.CharField(
         max_length=50, default='New Slot', unique=True)
-    max_slots = models.IntegerField()
+    max_slots = models.PositiveIntegerField(default=2)
 
     class Meta:
         ordering = ['-max_slots']
@@ -44,11 +44,11 @@ class Slot(models.Model):
         return self.slot_name
 
 
-class User(models.Model):
+class Guest(models.Model):
     """
     a class for the User model
     """
-    user_id = models.AutoField(primary_key=True)
+    guest_id = models.AutoField(primary_key=True)
     created_date = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=80)
     email = models.EmailField(max_length=254, default="")
@@ -58,7 +58,7 @@ class User(models.Model):
         ordering = ['-created_date']
 
     def __str__(self):
-        return self.user_id
+        return self.name
 
 
 class Booking(models.Model):
@@ -73,25 +73,22 @@ class Booking(models.Model):
     slot = models.ForeignKey(
         Slot, on_delete=models.CASCADE, related_name="slot_reserved",
         null=True)
-    user = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name='user', null=True)
+    guest = models.ForeignKey(
+        Guest, on_delete=models.CASCADE, related_name='user', null=True)
     status = models.CharField(
-        max_length=25, choices=status_options, default='awaiting confirmation',
-        unique=True)
+        max_length=25, choices=status_options, default='awaiting confirmation')
     slots = (
-        (1, "1 person"),
-        (2, "2 people"),
-        (3, "3 people"),
-        (4, "4 people"),
-        (5, "5 people"),
+        (1, "1 guest"),
+        (2, "2 guests"),
+        (3, "3 guests"),
+        (4, "4 guests"),
+        (5, "5 guests"),
     )
-    people_count = models.IntegerField(choices=slots, default=2)
+    guest_count = models.IntegerField(choices=slots, default=2)
 
     class Meta:
         ordering = ['-requested_time']
 
     def __str__(self):
-        return self.booking_id
-
-
+        return self.status
 
