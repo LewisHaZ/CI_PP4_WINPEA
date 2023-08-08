@@ -8,7 +8,7 @@ ITEM_TYPE = (
 # Model for Items
 class ProductItem(models.Model):
     """
-    Product item model
+    a class for the product item model
     """
     item_id = models.AutoField(primary_key=True)
     item_name = models.CharField(max_length=50, unique=True)
