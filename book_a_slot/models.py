@@ -42,6 +42,23 @@ class Slot(models.Slot):
         return self.slot_name
 
 
+class User(models.Model):
+    """
+    a class for the User model
+    """
+    user_id = models.AutoField(primary_key=True)
+    created_date = models.DateTimeField(auto_now_add=True)
+    name = models.CharField(max_length=80)
+    email = models.EmailField(max_length=254, default="")
+    phone = PhoneNumberField()
+
+    class Meta:
+        ordering = ['-created_date']
+
+    def __str__(self):
+        return self.user_id
+
+
 class Booking(models.Model):
     """
     a class for the booking model
@@ -59,6 +76,13 @@ class Booking(models.Model):
     status = models.CharField(
         max_length=25, choices=status_options, default='awaiting confirmation',
         unique=True)
+    slots = (
+        (1, "1 person"),
+        (2, "2 people"),
+        (3, "3 people"),
+        (4, "4 people"),
+        (5, "5 people"),
+    )
 
     class Meta:
         ordering = ['-requested_time']
@@ -67,18 +91,4 @@ class Booking(models.Model):
         return self.booking_id
 
 
-class User(models.Model):
-    """
-    a class for the User model
-    """
-    user_id = models.AutoField(primary_key=True)
-    created_date = models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=80)
-    email = models.EmailField(max_length=254, default="")
-    phone =
 
-    class Meta:
-        ordering = ['-created_date']
-
-    def __str__(self):
-        return self.user_id
