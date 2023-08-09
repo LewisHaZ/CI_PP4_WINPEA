@@ -3,16 +3,18 @@
 {% block content %}
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12">
-            {% for product in product_list %}
-            <ul>
-                <li>Name: {{ product.product_name }}</li>
-                <li>Description: {{ product.description }}</li>
-                <li>Price: £{{ product.price }}</li>
-            </ul>
-            {% endfor %}
-            
+        <div class="row d-flex justify-content-center">
+            <div class="col-sm-8">
+                <h2 class="text-center">Catalogue - Products</span></h2>
+                <hr>
+            </div>
         </div>
+            <div class="col-sm-8">
+                {% for product in product_list %}
+                <h5>{{ product.product_name }}</h5>
+                <p><em>£{{ product.price }}</em></p>
+                {% endfor %}
+            </div>
     </div>
 </div>
 {% endblock %}
