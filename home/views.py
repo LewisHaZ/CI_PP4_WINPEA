@@ -6,7 +6,7 @@ import os
 # Internal
 
 
-def index(request):
+def home(request):
     """
     Display home page
     """
