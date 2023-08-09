@@ -6,9 +6,11 @@ from django.views import generic
 from .models import ProductItem
 
 
-def all_products(request):
+def catalogueMenu(request):
     product_list = ProductItem.objects.all()
-    return render(request, 'catalogue.html', {'product_list' : product_list})
+    return render(
+        request, 
+        'item_catalogue/catalogue.html', {'product_list': product_list})
 
 
 class ProductList(generic.ListView):
