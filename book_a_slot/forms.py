@@ -27,10 +27,10 @@ class BookingForm(forms.ModelForm):
 
 
 class GuestForm(forms.ModelForm):
-        def __init__(self, *args, **kwargs):
-            super().__init__(*args, **kwargs)
-            self.helper = FormHelper(self)
-            self.helper.add_input(Submit('submit', 'Submit'))
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.helper = FormHelper(self)
+        self.helper.add_input(Submit('submit', 'Submit'))
 
         phone_number = PhoneNumberField(widget=forms.TextInput(
             attrs={'placeholder': ('Enter phone number including +44')}))
