@@ -10,11 +10,44 @@
             </div>
         </div>
             <div class="col-sm-8">
-                {% for product in product_list %}
-                <h5>{{ product.product_name }}</h5>
-                <p><em>£{{ product.price }}</em></p>
+                <h4>Bags</h4>
+                <hr>
+                {% if product_item.bag_item %}
+
+                
+                {% for product in product_item.bag_item. %}
+                
+                <h5>{{ product.product_name }}</h5> 
+                <p><em>{{ product.description | safe }} £{{ product.price }}</em></p>
+
                 {% endfor %}
+                
+                {% else %}
+                <p>Catalogue is currently unavailable, please come back later.</p>
+                {% endif %}
             </div>
     </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-8">
+            <hr>
+            <h4>Necklaces</h4>
+            <hr>
+            {% for product in product_list %}
+            <h5>{{ product.product_name }}</h5>
+            <p><em>{{ product.description | safe }} £{{ product.price }}</em></p>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-8">
+            <hr>
+            <h4>Bracelets</h4>
+            <hr>
+            {% for product in product_list %}
+            <h5>{{ product.product_name }}</h5>
+            <p><em>{{ product.description | safe }} £{{ product.price }}</em></p>
+            {% endfor %}
+        </div>
+
 </div>
 {% endblock %}
