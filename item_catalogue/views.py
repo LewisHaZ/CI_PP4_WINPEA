@@ -9,7 +9,7 @@ from .models import ProductItem
 def catalogueMenu(request):
     product_list = ProductItem.objects.all()
     return render(
-        request, 
+        request,
         'item_catalogue/catalogue.html', {'product_list': product_list})
 
 
@@ -20,7 +20,7 @@ class ProductList(generic.ListView):
     """
     model = ProductItem
     template_name = 'catalogue.html'
-    context = "product_item"
+    context_object_name = "product_item"
 
     def get_queryset(self):
         queryset = {

@@ -18,7 +18,7 @@ class ProductItem(models.Model):
     available = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ['-available']
+        ordering = ['-item_type']
 
     def __str__(self):
         return self.item_name
