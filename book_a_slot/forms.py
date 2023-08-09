@@ -7,7 +7,7 @@ from datetime import datetime
 from phonenumber_field.formfields import PhoneNumberField
 
 # Internal
-from .models import Booking
+from .models import Booking, Guest
 
 
 class BookingForm(forms.ModelForm):
@@ -24,3 +24,17 @@ class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
         fields = ('guest_count', 'requested_date', 'requested_time')
+
+
+class GuestForm(forms.ModelForm):
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, **kwargs)
+            self.helper = FormHelper(self)
+            self.helper.add_input(Submit('submit', 'Submit'))
+
+        phone_number = PhoneNumberField(widget=forms.TextInput(
+            attrs={'placeholder': ('Enter phone number including +44')}))
+
+        class Meta:
+            model = Guest
+            fields = ('name', 'email', 'phone')
