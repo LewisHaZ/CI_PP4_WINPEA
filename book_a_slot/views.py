@@ -5,6 +5,7 @@ from django.views import generic
 
 # Internal
 from .models import Slot, Guest, Booking
+from .forms import BookingForm, GuestForm
 
 
 def visit_store(request):
@@ -12,6 +13,6 @@ def visit_store(request):
     a view to display the booking list
     for visiting the store
     """
-    book_a_slot_list = Booking.objects.all()
+    context = {'booking_form': BookingForm(), 'guest_form': GuestForm()}
     return render(
         request, 'book_a_slot/visit_store.html', context)
