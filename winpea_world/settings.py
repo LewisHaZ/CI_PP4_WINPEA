@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'rangefilter',
     'book_a_slot',
     'item_catalogue',
+    'home',
 ]
 
 MIDDLEWARE = [

@@ -1,11 +1,12 @@
 # Imports
 # 3rd Party
 from django.shortcuts import render
+import os
 
 # Internal
 
 
-def home(request):
+def index(request):
     """
     Display home page
     """
