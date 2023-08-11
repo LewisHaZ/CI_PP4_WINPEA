@@ -52,10 +52,9 @@ class Reservations(View):
             booking.user = request.user
             booking.save()
         else:
-            booking_form = BookingForm
+            booking_form = BookingForm()
 
-        return
-        render(request, confirmed)
+        return render(request, 'book_a_slot/slot_confirmed.html')
 
 
 class Confirmed(generic.DetailView):
