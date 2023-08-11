@@ -2,7 +2,6 @@
 # 3rd Party
 from django import forms
 from crispy_forms.helper import FormHelper
-from crispy_forms.layout import Submit
 from datetime import datetime
 from phonenumber_field.formfields import PhoneNumberField
 
@@ -14,8 +13,7 @@ class BookingForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.helper = FormHelper(self)
-        self.helper.add_input(Submit('submit', 'Submit'))
+        self.helper = FormHelper(self)   
 
     requested_date = forms.DateField(
         widget=forms.DateInput(
@@ -30,11 +28,17 @@ class GuestForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
-        self.helper.add_input(Submit('submit', 'Submit'))
 
         phone_number = PhoneNumberField(widget=forms.TextInput(
             attrs={'placeholder': ('+44')}))
 
         class Meta:
             model = Guest
+            widgets = {
+                'name': forms.TextInput(attrs={'placeholder':  'Full name'}),
+                'email': forms.EmailInput(
+                    attrs={'placeholder': 'Email address'}),
+                
+            }
             fields = ('name', 'email', 'phone')
+            fields = ('name', 'email')
