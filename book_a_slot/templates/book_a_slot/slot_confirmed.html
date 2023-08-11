@@ -3,13 +3,13 @@
 {% block content %}
 
 <section>
-    <div class="container">
+    <div class="container-fluid d-flex justify-content-center">
         <div class="row">
-            <div class="col-md-4">
-                <h2>Your slot is confirmed!</h2>
-                <h3>See you soon, have a good day.</h3>
-                <h4>Return home, <a href="{% url 'home/index.html' %}">click</a></h4>
-                <h5>or Browse our Catalogue <a href="{% url 'item_catalogue/catalogue' %}">click</a></h5>
+            <div class="col-md-8">
+                <h2>Your slot is confirmed!</h2><br>
+                <h3>See you soon, have a good day.</h3><br>
+                <h4>Return home, <a href="{% url 'home' %}">click</a></h4><br>
+                <h4>or Browse our Catalogue <a href="{% url 'catalogue' %}">click</a></h4>
             </div>
         </div>
     </div>

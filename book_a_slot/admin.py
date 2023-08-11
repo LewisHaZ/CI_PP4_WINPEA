@@ -22,8 +22,8 @@ class BookingAdmin(admin.ModelAdmin):
         'status',
         'slot_id',
         'requested_date',
-        'requested_time'
-        )
+        'requested_time',
+        'created_date')
     list_display = (
         'booking_id',
         'user',
@@ -33,7 +33,8 @@ class BookingAdmin(admin.ModelAdmin):
         'status',
         'slot',
         'requested_date',
-        'requested_time')
+        'requested_time',
+        'created_date')
 
     search_fields = ['guest__name']
     list_filter = (('requested_date', DateRangeFilter),)
