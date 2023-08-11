@@ -1,9 +1,11 @@
 # Imports
 # 3rd Party
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.views import View
 from django.views import generic
 from django.contrib.auth.models import User
+from django.contrib.messages.views import SuccessMessageMixin
+from django.views.generic.edit import UpdateView
 
 # Internal
 from .models import Slot, Booking
@@ -17,7 +19,6 @@ def get_user_instance(request):
     """
     user_email = request.user.email
     user = User.objects.filter(email=user_email).first()
-
     return user
 
 
@@ -80,24 +81,21 @@ class BookingList(generic.DetailView):
             bookings = Booking.objects.filter(user=request.user)
 
             return render(
-                request, 'book_a_slot/booking_list.html', {'bookings': bookings})
+                request, 'book_a_slot/booking_list.html', {
+                    'bookings': bookings})
         else:
             return redirect('accounts/login.html')
 
-    def edit_booking(request, booking_id):
-        """
-        Allow users that are logged in/registered
-        to edit their bookings
-        """
-        booking = get_object_or_404(Booking, id=booking_id)
 
-    if request.method == 'POST':
-        form = BookingForm(data=request.POST, instance=booking)
-        if form.is_valid():
-            form.save()
-            return redirect('book_a_slot/booking_list.html')
+class EditBooking(SuccessMessageMixin, UpdateView):
+    """
+    Allow users that are logged in/registered
+    to edit their bookings
+    """
+    model = Booking
+    form_class = BookingForm
+    template_name = 'book_a_slot/edit_booking.html'
+    success_message = 'Booking was updated.'
 
-    form = BookingForm(instance=booking)
-
-    return render(
-        request, 'edit_booking.html', {'form': form})
+    def get_success_url(self, **kwargs):
+        return reverse('booking_list')
