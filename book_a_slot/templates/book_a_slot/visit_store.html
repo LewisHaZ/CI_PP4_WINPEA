@@ -5,10 +5,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4 mt-3 offset-md-2">
-            <form method="post">
+            <form action="" method="POST">
                 {% csrf_token %}
-                <!-- Guest booking & booking form -->
-                {{ guest_form| crispy }}
+                <!-- booking form -->
                 {{ booking_form| crispy }}
             </form>
         </div>

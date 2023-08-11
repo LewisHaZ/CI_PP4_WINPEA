@@ -1,6 +1,7 @@
 # 3rd party:
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
+from django.contrib.auth.models import User
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #  The store opens at middday and closes at 6PM each day.
@@ -44,21 +45,21 @@ class Slot(models.Model):
         return self.slot_name
 
 
-class Guest(models.Model):
-    """
-    a class for the User model
-    """
-    guest_id = models.AutoField(primary_key=True)
-    created_date = models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=80)
-    email = models.EmailField(max_length=254, default="")
-    phone = PhoneNumberField()
+# class Guest(models.Model):
+#     """
+#     a class for the User model
+#     """
+#     guest_id = models.AutoField(primary_key=True)
+#     created_date = models.DateTimeField(auto_now_add=True)
+#     name = models.CharField(max_length=80)
+#     email = models.EmailField(max_length=254, default="")
+#     phone = PhoneNumberField()
 
-    class Meta:
-        ordering = ['-created_date']
+    # class Meta:
+    #     ordering = ['-created_date']
 
-    def __str__(self):
-        return self.name
+    # def __str__(self):
+    #     return self.name
 
 
 class Booking(models.Model):
@@ -73,8 +74,11 @@ class Booking(models.Model):
     slot = models.ForeignKey(
         Slot, on_delete=models.CASCADE, related_name="slot_reserved",
         null=True)
-    guest = models.ForeignKey(
-        Guest, on_delete=models.CASCADE, related_name='user', null=True)
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="user", null=True)
+    name = models.CharField(max_length=50, null=True, blank=True)
+    email = models.EmailField(max_length=200, default="")
+    phone = PhoneNumberField(null=True)
     status = models.CharField(
         max_length=25, choices=status_options, default='awaiting confirmation')
     slots = (
@@ -91,4 +95,3 @@ class Booking(models.Model):
 
     def __str__(self):
         return self.status
-
