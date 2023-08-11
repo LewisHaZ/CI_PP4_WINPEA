@@ -65,4 +65,21 @@ class Confirmed(generic.DetailView):
     template_name = 'book_a_slot/slot_confirmed.html'
 
     def get(self, request):
-        return render(request, 'book_a_slot/slot_confirmed.html')
+        return render(request, 'book_a_slot/visit_store.html')
+
+
+class BookingList(generic.DetailView):
+    """
+    Displays bookings to the user
+    that they have made
+    """
+    template_name = 'booking_list.html'
+
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            bookings = Booking.objects.filter(user=request.user)
+
+            return render(
+                request, 'book_a_slot/booking_list.html', {'bookings': bookings})
+        else:
+            return redirect('accounts/login.html')
