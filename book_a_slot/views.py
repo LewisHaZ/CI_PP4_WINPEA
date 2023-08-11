@@ -10,7 +10,7 @@ from .models import Slot, Booking
 from .forms import BookingForm
 
 
-def get_user_instance(request, User):
+def get_user_instance(request):
     """
     Picks up user details when they
     are logged into the system
@@ -51,11 +51,11 @@ class Reservations(View):
             booking = booking_form.save(commit=False)
             booking.user = request.user
             booking.save()
-            return redirect(Confirmed())
+            return render(request, 'book_a_slot/slot_confirmed.html')
         else:
             booking_form = BookingForm()
 
-        return render(request, 'book_a_slot/slot_confirmed.html')
+        return render(request, 'book_a_slot/visit_store.html', {'booking_form': booking_form})
 
 
 class Confirmed(generic.DetailView):
