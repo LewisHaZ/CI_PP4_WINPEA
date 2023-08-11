@@ -23,6 +23,8 @@
                 {% csrf_token %}
                 <!-- booking form -->
                 {{ booking_form| crispy }}
+
+                <button class="btn btn-success" type="submit">Submit</button>
             </form>
             {% endif %}
             {% endif %}

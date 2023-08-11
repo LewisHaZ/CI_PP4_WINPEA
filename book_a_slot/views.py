@@ -83,3 +83,21 @@ class BookingList(generic.DetailView):
                 request, 'book_a_slot/booking_list.html', {'bookings': bookings})
         else:
             return redirect('accounts/login.html')
+
+    def edit_booking(request, booking_id):
+        """
+        Allow users that are logged in/registered
+        to edit their bookings
+        """
+        booking = get_object_or_404(Booking, id=booking_id)
+
+    if request.method == 'POST':
+        form = BookingForm(data=request.POST, instance=booking)
+        if form.is_valid():
+            form.save()
+            return redirect('book_a_slot/booking_list.html')
+
+    form = BookingForm(instance=booking)
+
+    return render(
+        request, 'edit_booking.html', {'form': form})
