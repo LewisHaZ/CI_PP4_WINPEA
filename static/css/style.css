@@ -39,3 +39,15 @@ body {
     max-height: 72px;
     max-width: 250px;
 }
+
+.card{
+    padding: 20px;
+    max-height: 295px;
+}
+
+.img-store{
+    height: auto;
+    width: auto;
+    max-height: 220px;
+    max-width: 440px;
+}
