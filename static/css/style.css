@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+
+a {
+    color: #ffff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ced4da;
+}
+
+
+body {
+    background-color: #212529;
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    background-color: #a19d9d;
+    padding: 20px;
+}
+

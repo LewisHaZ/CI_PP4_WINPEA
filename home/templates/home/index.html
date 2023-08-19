@@ -5,15 +5,16 @@
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-        <img src="/static/images/carousel-1.JPG" class="d-block w-100" alt="Image of a woman with bag">
+            <img src="/static/images/carousel-1.JPG" class="d-block w-100" alt="Image of a woman with bag">
         </div>
         <div class="carousel-item">
-        <img src="/static/images/carousel-2.JPG" class="d-block w-100" alt="Image of a Brand event promotion">
+            <img src="/static/images/carousel-2.JPG" class="d-block w-100" alt="Image of a Brand event promotion">
         </div>
         <div class="carousel-item">
-        <img src="/static/images/carousel-3.JPG" class="d-block w-100" alt="Image of materials">
+            <img src="/static/images/carousel-3.JPG" class="d-block w-100" alt="Image of materials">
         </div>
     </div>
+</div>
 
 <div class="container-fluid">
     <div class="row text-center mt-5">
@@ -27,22 +28,21 @@
     <div class="row d-flex my-5 justify-content-center text-center">
         <div class="col-10 col-md-4 mt-4 grow">
             <a href="{% url 'visit_store' %}" class="text-decoration-none home-cards-a">
-                <div class="card">
+                <div class="card shadow">
                     <img src="/static/images/image-of-store.jpg" class="card-img-top" alt="Image of the store">
                 </a>
                     <div class="card-body">
-                        <h2 class="card-title">Book</h2>
+                        <a href="{%  url 'visit_store' %}"><h2 class="card-title">Book a Slot</h2></a>
                         <p class="card-text">Book a slot with us to visit the store now!</p>
                     </div>
                 </div>
         <div class="col-10 col-md-4 mt-4 grow">
             <a href="{% url 'catalogue' %}" class="text-decoration-none home-cards-a">
-                <div class="card">
+                <div class="card shadow">
                     <img src="/static/images/image-catalogue.JPG" class="card-img-top" alt="Image of product">
                 </a>
                     <div class="card-body">
-                        <h2 class="card-title">Catalogue</h2>
-                        <p class="card-text">View our products</p>
+                        <a href="{% url 'catalogue' %}"><h2 class="card-title">Catalogue</h2></a>
                     </div>
                 </div>
             </div>
