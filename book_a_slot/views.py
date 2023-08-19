@@ -120,5 +120,4 @@ def cancel_booking(request, pk):
         return redirect('booking_list')
 
     return render(
-        request, 'bookings/cancel_booking.html', {'booking': booking}
-    )
+        request, 'book_a_slot/cancel_booking.html', {'booking': booking})
