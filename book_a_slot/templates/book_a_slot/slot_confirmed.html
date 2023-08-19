@@ -3,17 +3,21 @@
 {% block content %}
 
 <section>
-    <div class="container-fluid d-flex justify-content-center">
-        <div class="row">
-            <div class="col-md-8">
-                <h2>Your slot is confirmed!</h2><br>
-                <h3>See you soon, have a good day.</h3><br>
-                <h4>Return home, <a href="{% url 'home' %}">click</a></h4><br>
-                <h4>or Browse our Catalogue <a href="{% url 'catalogue' %}">click</a></h4>
+    <div class="container">
+        <div class="row justify-content-center mt-3">
+            <div class="col-md-5">
+                <div class="card-body bg-light">
+                    <div class="card-body">
+                        <h2>Booking Successful</h2><br>
+                        <hr>
+                        <h3>Looking forward to welcoming you in-store!</h3><br>
+                        <h4>Visit our catalogue, <a href="{% url 'catalogue' %}">click</a></h4>
+                        <h4>Or go back to the home page, <a href="{% url 'home' %}">click</a></h4>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
 </section>
 
 {%endblock%}

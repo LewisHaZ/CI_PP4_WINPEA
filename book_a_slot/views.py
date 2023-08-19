@@ -4,6 +4,7 @@ from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.views import View
 from django.views import generic
 from django.contrib.auth.models import User
+from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import UpdateView
 
@@ -29,6 +30,7 @@ class Reservations(View):
     set to a booking email
     """
     template_name = 'book_a_slot/visit_store.html'
+    success_message = 'Booking has been made successfully.'
 
     def get(self, request, *args, **kwargs):
         """
@@ -54,9 +56,14 @@ class Reservations(View):
             booking.save()
             return render(request, 'book_a_slot/slot_confirmed.html')
         else:
+            messages.warning(
+                request, 'Please use the correct format.'
+            )
             booking_form = BookingForm()
 
-        return render(request, 'book_a_slot/visit_store.html', {'booking_form': booking_form})
+        return render(
+            request,
+            'book_a_slot/visit_store.html', {'booking_form': booking_form})
 
 
 class Confirmed(generic.DetailView):
@@ -99,3 +106,19 @@ class EditBooking(SuccessMessageMixin, UpdateView):
 
     def get_success_url(self, **kwargs):
         return reverse('booking_list')
+
+
+def cancel_booking(request, pk):
+    """
+    Delete the booking after it's been
+    booked by a user with a Primary Key
+    """
+    booking = Booking.objects.get(pk=pk)
+
+    if request.method == 'POST':
+        booking.delete()
+        return redirect('booking_list')
+
+    return render(
+        request, 'bookings/cancel_booking.html', {'booking': booking}
+    )
