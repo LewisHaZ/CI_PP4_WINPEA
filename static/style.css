@@ -1,0 +1,12 @@
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    background-color: #0000;
+    padding: 20px;
+}

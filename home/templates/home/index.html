@@ -1,32 +1,27 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<div class="container-fluid col-12">
-    <div class="row">
-        <!-- Carousel -->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <img src="/static/images/carousel-1.JPG"
-                    class="d-block w-100" alt="Image of a woman with bag">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/static/images/carousel-2.JPG"
-                    class="d-block w-100" alt="Image of a Brand event promotion">
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <img src="/static/images/carousel-3.JPG"
-                    class="d-block w-100" alt="Image of materials">
-                  </div>
-                </div>
-              </div>
-              <div class="container-fluid">
-                <div class="row text-center mt-5">
-                    <h2>Welcome to Winpea World</h2>
-                    <p>Looking forward to welcoming you in-store!</p>
-              </div>
+<!-- Carousel -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="/static/images/carousel-1.JPG" class="d-block w-100" alt="Image of a woman with bag">
         </div>
+        <div class="carousel-item">
+        <img src="/static/images/carousel-2.JPG" class="d-block w-100" alt="Image of a Brand event promotion">
+        </div>
+        <div class="carousel-item">
+        <img src="/static/images/carousel-3.JPG" class="d-block w-100" alt="Image of materials">
+        </div>
+    </div>
+
+<div class="container-fluid">
+    <div class="row text-center mt-5">
+        <h2>Welcome to Winpea World</h2>
+        <p>Looking forward to welcoming you in-store!</p>
+    </div>
+</div>
+
 <!-- Promo cards -->
 <section class="container">
     <div class="row d-flex my-5 justify-content-center text-center">
