@@ -7,17 +7,19 @@
         <div class="row justify-content-center mt-3">
             <div class="col-md-5">
                 <div class="card-body bg-light">
-                    <div class="card-body">
-                        <h2>Booking Successful</h2><br>
-                        <hr>
-                        <h3>Looking forward to welcoming you in-store!</h3><br>
-                        <h4>Visit our catalogue, <a href="{% url 'catalogue' %}">click</a></h4>
-                        <h4>Or go back to the home page, <a href="{% url 'home' %}">click</a></h4>
+                    <div class="row">
+                            <div class="class col-12 p-5">
+                                <h2>Booking Successful</h2><br>
+                                <hr>
+                                <h3>Looking forward to welcoming you in-store!</h3><br>
+                                <h4>Visit our catalogue, <a href="{% url 'catalogue' %}">click</a></h4>
+                                <h4>Or go back to the home page, <a href="{% url 'home' %}">click</a></h4>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </section>
 
 {%endblock%}
