@@ -9,7 +9,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import UpdateView
 
 # Internal
-from .models import Slot, Booking
+from .models import Booking
 from .forms import BookingForm
 
 
