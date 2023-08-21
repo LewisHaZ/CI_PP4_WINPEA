@@ -5,6 +5,7 @@ from django.core.paginator import Paginator
 
 # Internal 
 from .models import Post
+from .forms import CommentForm
 
 
 class PublishedPosts(generic.ListView):

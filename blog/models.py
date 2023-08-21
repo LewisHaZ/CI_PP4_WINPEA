@@ -19,7 +19,6 @@ class Post(models.Model):
     excerpt = models.TextField(blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
    
-
     class Meta:
         ordering = ['-created_date']
 
