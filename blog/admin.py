@@ -5,6 +5,7 @@ from django_summernote.admin import SummernoteModelAdmin
 # Internal
 from .models import Post, Comment
 
+
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
 
