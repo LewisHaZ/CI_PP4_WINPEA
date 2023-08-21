@@ -21,13 +21,13 @@
            
                 {% endif %}
                 <div class="card-body">
-                    <a href="{% url 'post_expand' post.slug %}" class="post-link"><h5 class="card-title mt-3">{{ post.title }}</h5></a>
+                    <a href="{% url 'post_expand' post.slug %}" class="post-link link_color"><h5 class="card-title mt-3">{{ post.title }}</h5></a>
                     <h6 class="card-subtitle mb-2 text-muted">By: {{ post.author }}</h6>
                     <a href="{% url 'post_expand' post.slug %}" class="post-link">
-                        <p class="card-text mt-3"><em>{{ post.excerpt }}</em></p>
+                        <p class="card-text mt-3 excerpt"><em>{{ post.excerpt }}</em></p>
                     </a>
                     <hr>
-                    <p class="card-text text-muted h6 mb-3">{{ post.created_date }}</p>
+                    <p class="link_color text-muted h6 mb-3">{{ post.created_date }}</p>
                 </div>
             </div>
             {% endif %}
