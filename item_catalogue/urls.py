@@ -3,8 +3,8 @@
 from django.urls import path
 
 # Internal
-from . import views
+from item_catalogue import views
 
 urlpatterns = [
-    path('catalogue/', views.catalogueMenu, name='catalogue'),
+    path('catalogue/', views.catalogue_menu, name='catalogue_menu'),
 ]

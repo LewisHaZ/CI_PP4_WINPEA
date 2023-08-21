@@ -4,8 +4,8 @@
 <div class="container-fluid">
     <div class="row">
         <div class="row d-flex justify-content-center">
-            <div class="col-sm-8">
-                <h2 class="text-center">Catalogue - Products</h2>
+            <div class="col-sm-8 mt-5 mb-5">
+                <h1 class="text-center">Catalogue - Products</h1>
                 <hr>
             </div>
         </div>
@@ -13,11 +13,11 @@
         <div class="row justify-content-center">
             <!-- Bags List -->
             <div class="col-sm-8">
-                <hr><h4>Bags</h4><hr>
-                {% for product in product_list %}
-                {% if product.product_type == 0 %}
-                <h5>{{ product.product_name }}</h5> 
-                <p><em>{{ product.description | safe }} £{{ product.price }}</em></p>
+                <hr><h2>Bags</h2><hr>
+                {% for item in product_list %}
+                {% if item.item_type == 0 %}
+                <h3>{{ item.item_name }}</h3> 
+                <p><em>{{ item.description | safe }} £{{ item.price }}</em></p>
                 {% endif %}
                 {% endfor %}
             </div>
@@ -26,10 +26,10 @@
         <!-- Necklaces List-->
         <div class="col-sm-8">
             <hr><h4>Necklaces</h4><hr>
-            {% for product in product_list %}
-            {% if product.product_type == 1 %}
-            <h5>{{ product.product_name }}</h5>
-            <p><em>{{ product.description | safe }} £{{ product.price }}</em></p>
+            {% for item in product_list %}
+            {% if item.item_type == 1 %}
+            <h5>{{ item.item_name }}</h5>
+            <p><em>{{ item.description | safe }} £{{ item.price }}</em></p>
             {% endif %}
             {% endfor %}
         </div>
@@ -38,10 +38,10 @@
         <!-- Bracelets List -->
         <div class="col-sm-8">
             <hr><h4>Bracelets</h4><hr>
-            {% for product in product_list %}
-            {% if product.product_type == 2 %}
-            <h5>{{ product.product_name }}</h5>
-            <p><em>{{ product.description | safe }} £{{ product.price }}</em></p>
+            {% for item in product_list %}
+            {% if item.item_type == 2 %}
+            <h5>{{ item.item_name }}</h5>
+            <p><em>{{ item.description | safe }} £{{ item.price }}</em></p>
             {% endif %}
             {% endfor %}
         </div>
