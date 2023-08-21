@@ -50,6 +50,9 @@
           <a href="{% url 'catalogue' %}" role="button" aria-expanded="false" class="nav-link">Catalogue</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{% url 'visit_store' %}">Book</a>
           </li>
           {% if user.is_authenticated %}
