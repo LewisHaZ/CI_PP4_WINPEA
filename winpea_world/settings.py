@@ -61,6 +61,7 @@ INSTALLED_APPS = [
     'book_a_slot',
     'item_catalogue',
     'home',
+    'blog',
 ]
 
 SITE_ID = 1
