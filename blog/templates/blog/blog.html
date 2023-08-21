@@ -1,4 +1,4 @@
-{% extends 'base.html'}
+{% extends 'base.html' %}
 
 {% block content %}
 
@@ -11,8 +11,8 @@
             <div class="col-md-4 m-5 grow">
                 {% if 'placeholder' in post.featured_image.url %}
 
-                <a href="{% url 'post_expand' post.slug %}"><img
-                        src="/static/images/image-blog-model.JPG"
+                <a href="{% url 'post_expand' post.slug %}">
+                    <img src="/static/images/image-blog-model.JPG"
                         class="card-img-top rounded" alt="A woman wearing Jewellery"></a>
                 {% else %}
 
@@ -41,6 +41,7 @@
         <a href="?page=1">&laquo First</a>
         <a href="?page={{ postings.previous_page_number }}">Previous</a>
         Page {{ postings.number }} of {{postings.paginator.num_pages }}
+        {% endif %}
 
         {% if postings.has_next %}
 
@@ -53,4 +54,4 @@
     
 </div>
 
-{% end block %}
+{% endblock %}
