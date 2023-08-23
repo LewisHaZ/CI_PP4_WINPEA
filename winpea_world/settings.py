@@ -42,6 +42,7 @@ CSRF_TRUSTED_ORIGINS = ['https://8000-lewishaz-cipp4winpea-mzbticeyhxd.ws-eu104.
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
