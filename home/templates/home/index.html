@@ -32,21 +32,39 @@
 <!-- Promo cards -->
 <section class="container">
     <div class="row d-flex my-5 justify-content-center text-center">
-        <div class="col-10 col-md-4 mt-4 grow">
+        <div class="col-10 col-md-3 col-lg-2 m-3 grow card shadow">
             <a href="{% url 'visit_store' %}" class="text-decoration-none">
-                <div class="card shadow">
-                    <img src="{% static 'images/image-of-store.jpg' %}" class="card-img-top rounded img-store" alt="Image of the store">
+                    <img src="{% static 'images/image-of-store.jpg' %}" class="card-img-top rounded img-fluid" alt="Image of the store">
                 </a>
-                <a href="{% url 'visit_store %'}"><h2>Book a Slot</h2></a>
-                    </div>
+                <div class="row mt-3 mb-3">
+                    <a href="{% url 'visit_store %'}"><h2>Book a Slot</h2></a>
                 </div>
-        <div class="col-10 col-md-4 mt-4 grow">
+        </div>
+
+        <div class="col-10 col-md-3 col-lg-2 m-3 grow card shadow">
             <a href="{% url 'catalogue_menu' %}" class="text-decoration-none">
-                <div class="card shadow">
-                    <img src="{% static 'images/image-catalogue.jpg' %}" class="card-img-top rounded img-store" alt="Image of product">
+                    <img src="{% static 'images/image-catalogue.jpg' %}" class="card-img-top rounded img-fluid" alt="Image of product">
                 </a>
-                <a href="{% url 'catalogue_menu' %}"><h2 class="card-title">Catalogue</h2></a>
+                <div class="row mt-3 mb-3">
+                    <a href="{% url 'catalogue_menu' %}"><h2>Catalogue</h2></a>
+                </div>
+        </div>
+    
+        <div class="col-10 col-md-3 col-lg-2 m-3 grow card shadow">
+            <a href="{% url 'blog' %}" class="text-decoration-none">
+                    <img src="https://images.pexels.com/photos/325521/pexels-photo-325521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="card-img-top rounded" alt="Image of group of people">
+                </a>
+                <div class="row mt-3 mb-3">
+                    <a href="{% url 'blog' %}"><h2>Our Community</h2></a>
+                </div>
+            </div>
         </div>
 </section>
+
+<div class="container-fluid">
+    <div class="row text-center">
+        <p><em>Allow us to welcome you to our store, along with any of your friends and family.</em></p>
+    </div>
 
 {% endblock %}

@@ -33,16 +33,15 @@ body {
     text-decoration: underline;
 }
 
+.bg-light {
+    background-color: rgba(190, 172, 172, 0.897);
+}
+
 .img-responsive {
     height: auto;
     width: auto;
     max-height: 72px;
     max-width: 250px;
-}
-
-.card{
-    padding: 15px;
-    max-height: 295px;
 }
 
 .excerpt{
