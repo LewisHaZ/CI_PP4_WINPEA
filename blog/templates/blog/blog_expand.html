@@ -30,6 +30,7 @@
         <div class="col-md-8 mx-auto p-3 mt-3 mb-3">
             <h6>{{ comment.name }}</h6>
             <p>{{ comment.body | linebreaks }}</p>
+            <p><em>{{ comment.created_date }}</em></p>
         </div>
         {% endfor %}
     </div>
