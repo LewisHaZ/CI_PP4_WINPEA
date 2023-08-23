@@ -7,8 +7,22 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import UpdateView
 from django.core.paginator import Paginator
 
+# Internal
+from .models import Contact
+from .forms import ContactForm
 
-class Contact(View):
+
+def get_user_instance(request):
+    """
+    retrieves user details if logged in
+    """
+
+    user_email = request.user.email
+    user = User.objects.filter(email=user_email).first()
+    return user
+
+
+class ContactMessage(View):
     """
     This view displays the contact form and if the user
     is registered and inserts the user email into the
@@ -42,7 +56,7 @@ class Contact(View):
             contact.save()
             messages.success(
                 request, "Message has been sent")
-            return render(request, 'contactus/contactus.html')
+            return render(request, 'contactus/message_received.html')
 
         return render(request, 'contactus/contactus.html',
                       {'contact_form': contact_form})
