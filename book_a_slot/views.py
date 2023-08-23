@@ -54,10 +54,11 @@ class Reservations(View):
             booking = booking_form.save(commit=False)
             booking.user = request.user
             booking.save()
+            messages.success(request, "Booking successful")
             return render(request, 'book_a_slot/slot_confirmed.html')
         else:
-            messages.warning(
-                request, 'Please use the correct format.'
+            messages.error(
+                request, 'Please use the correct format. E.G. +447123456789'
             )
             booking_form = BookingForm()
 
@@ -117,6 +118,7 @@ def cancel_booking(request, pk):
 
     if request.method == 'POST':
         booking.delete()
+        messages.success(request, "Booking successfully cancelled")
         return redirect('booking_list')
 
     return render(
