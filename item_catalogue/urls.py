@@ -6,5 +6,5 @@ from django.urls import path
 from item_catalogue import views
 
 urlpatterns = [
-    path('catalogue/', views.catalogue_menu, name='catalogue_menu'),
+    path('catalogue', views.catalogue_menu, name='catalogue_menu'),
 ]
