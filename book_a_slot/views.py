@@ -1,12 +1,12 @@
 # Imports
 # 3rd Party
 from django.shortcuts import render, reverse, redirect, get_object_or_404
-from django.views import View
-from django.views import generic
+from django.views import generic, View
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import UpdateView
+from django.core.paginator import Paginator
 
 # Internal
 from .models import Booking
@@ -77,20 +77,31 @@ class Confirmed(generic.DetailView):
         return render(request, 'book_a_slot/visit_store.html')
 
 
-class BookingList(generic.DetailView):
+class BookingList(generic.ListView):
     """
     Displays bookings to the user
     that they have made
     """
+    model = Booking
+    queryset = Booking.objects.filter().order_by('-created_date')
     template_name = 'booking_list.html'
+    paginated_by = 4
 
     def get(self, request, *args, **kwargs):
+
+        booking = Booking.objects.all()
+        paginator = Paginator(Booking.objects.all(), 4)
+        page = request.GET.get('page')
+        booking_page = paginator.get_page(page)
+
         if request.user.is_authenticated:
             bookings = Booking.objects.filter(user=request.user)
 
             return render(
                 request, 'book_a_slot/booking_list.html', {
-                    'bookings': bookings})
+                    'booking': booking,
+                    'bookings': bookings,
+                    'booking_page': booking_page})
         else:
             return redirect('accounts/login.html')
 
