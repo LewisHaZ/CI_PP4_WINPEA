@@ -54,13 +54,9 @@ class Reservations(View):
             booking = booking_form.save(commit=False)
             booking.user = request.user
             booking.save()
-            messages.success(request, "Booking successful")
+            messages.success(
+                request, "Booking successful, awaiting confirmation")
             return render(request, 'book_a_slot/slot_confirmed.html')
-        else:
-            messages.error(
-                request, 'Please use the correct format. E.G. +447123456789'
-            )
-            booking_form = BookingForm()
 
         return render(
             request,

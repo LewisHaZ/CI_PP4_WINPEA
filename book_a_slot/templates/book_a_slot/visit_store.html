@@ -14,7 +14,7 @@
 
                         <h3>Login required</h3>
                         <p>Please login to book a slot</p>
-                        <a class="link_color" href="{% url 'account_login' %}">Login here</a>
+                        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login page</a></button>
                         {% else %}
 
                         <!-- Display form if user is logged in-->
@@ -33,6 +33,21 @@
                             <button class="btn btn-success" type="submit">Submit</button>
                         </form>
                         {% endif %}
+                        {% endif %}
+                        <!-- Form Errors -->
+                        {% if booking_form.errors %}
+                        {% for field in booking_form %}
+                        {% for error in field.errors %}
+                            <div class="alert alert-danger">
+                                <strong>{{ error|escape }}</strong>
+                            </div>
+                        {% endfor %}
+                        {% endfor %}
+                        {% for error in booking_form.non_field_errors %}
+                            <div class="alert alert-danger">
+                                <strong>{{ error|escape }}</strong>
+                            </div>
+                        {% endfor %}
                         {% endif %}
                     </div>
                 </div>
