@@ -1,6 +1,7 @@
 # 3rd Party Imports
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
+from django.contrib import messages
 from django.core.paginator import Paginator
 
 # Internal 
@@ -56,8 +57,10 @@ class PostExpand(View):
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
+            messages.success(request, 'Comment pending approval from admin')
         else:
             comment_form = CommentForm()
+            messages.error(request, 'Please try again later')
 
         return render(
             request, 'blog/blog_expand.html',
