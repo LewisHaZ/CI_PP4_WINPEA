@@ -11,4 +11,5 @@ urlpatterns = [
     path('', include('book_a_slot.urls')),
     path('accounts/', include('allauth.urls')),
     path('', include('blog.urls')),
+    path('', include('contactus.urls')),
 ]
