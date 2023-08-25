@@ -6,7 +6,7 @@ from django.urls import reverse
 
 class TestCatalogueViews(TestCase):
     """
-    A class to test 
+    A class to test
     the views.py of the catalogue app
     """
     def setUp(self):
