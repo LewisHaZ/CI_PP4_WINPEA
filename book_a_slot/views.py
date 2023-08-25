@@ -24,7 +24,7 @@ def get_user_instance(request):
 
 class Reservations(View):
     """
-    User view for making bookings
+    A class for User view for making bookings
     If user is already logged in then email is
     set to a booking email
     """

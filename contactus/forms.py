@@ -8,7 +8,10 @@ from .models import Contact
 
 
 class ContactForm(forms.ModelForm):
-
+    """
+    A class to initialise the content
+    for the contact form
+    """
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)

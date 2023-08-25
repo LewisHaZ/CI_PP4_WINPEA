@@ -10,6 +10,11 @@ from .forms import CommentForm
 
 
 class PublishedPosts(generic.ListView):
+    """
+    A class to collect all of the posts that have
+    been approved and posts to the community
+    and to paginate them.
+    """
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_date')
     template_name = 'blog.html'
@@ -27,6 +32,11 @@ class PublishedPosts(generic.ListView):
 
 
 class PostExpand(View):
+    """
+    A class to take the user from the preview of the blog
+    to the blog page itself, there is validation for
+    logged or logged out user to be able to comment.
+    """
 
     def get(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)

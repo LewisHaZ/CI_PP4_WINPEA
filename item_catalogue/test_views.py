@@ -4,7 +4,11 @@ from django.test import TestCase, Client
 from django.urls import reverse
 
 
-class TestMenusViews(TestCase):
+class TestCatalogueViews(TestCase):
+    """
+    A class to test 
+    the views.py of the catalogue app
+    """
     def setUp(self):
         self.client = Client()
         self.catalogue_url = reverse('catalogue')

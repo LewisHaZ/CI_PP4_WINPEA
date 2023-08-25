@@ -6,6 +6,9 @@ from .models import ProductItem
 
 
 def catalogue_menu(request):
+    """
+    loads the catalogue menu view
+    """
     product_list = ProductItem.objects.all()
     return render(
         request, 'item_catalogue/catalogue.html', {

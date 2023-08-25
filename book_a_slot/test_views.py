@@ -5,6 +5,10 @@ from django.urls import reverse
 
 
 class TestBookingsViews(TestCase):
+    """
+    This is a class to test
+    the views.py of the book a slot app
+    """
     def setUp(self):
         self.client = Client()
         self.reservations_url = reverse('reservations')

@@ -2,6 +2,7 @@
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from django.contrib.auth.models import User
+
 #  The store opens at middday and closes at 6PM each day.
 time_slots = (
     ('12:00', '12:00'),
@@ -72,6 +73,12 @@ class Booking(models.Model):
     guest_count = models.IntegerField(choices=slots, default=2)
 
     class Meta:
+        """
+        A class to order
+        the times of requested slots
+        and a function to ensure there is no double
+        bookings.
+        """
         ordering = ['-requested_time']
         unique_together = ('requested_date', 'requested_time', 'slot')
 

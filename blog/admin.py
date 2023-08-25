@@ -8,6 +8,11 @@ from .models import Post, Comment
 
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
+    """
+    A class for the Post Admin that will
+    be able to control content on the
+    Blog page
+    """
 
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('content')
@@ -18,6 +23,11 @@ class PostAdmin(SummernoteModelAdmin):
 
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
+    """
+    A class for the Comment Admin that will
+    be able to control content on the 
+    Blog page
+    """
 
     list_filter = ('approved', 'created_date')
     list_display = ('name', 'body', 'post', 'created_date', 'approved')

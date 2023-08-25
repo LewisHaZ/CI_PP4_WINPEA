@@ -8,7 +8,10 @@ from .models import Booking
 
 
 class BookingForm(forms.ModelForm):
-
+    """
+    A class to initialise the content
+    for the booking form
+    """
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
@@ -21,6 +24,11 @@ class BookingForm(forms.ModelForm):
         attrs={'placeholder': ('+447123456789')}))
 
     class Meta:
+        """
+        A class to set up the
+        various fields of the
+        booking app
+        """
         model = Booking
         fields = (
             'name',

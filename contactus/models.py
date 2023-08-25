@@ -5,6 +5,10 @@ from django.contrib.auth.models import User
 
 
 class Contact(models.Model):
+    """
+    A class for the contact us
+    model 
+    """
     message_id = models.AutoField(primary_key=True)
     created_date = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(
@@ -15,6 +19,10 @@ class Contact(models.Model):
     message = models.TextField()
 
     class Meta:
+        """
+        A class for keep dates
+        chronological
+        """
         ordering = ['created_date']
 
     def __str__(self):

@@ -7,11 +7,21 @@ from .models import Slot, Booking
 
 @admin.register(Slot)
 class SlotAdmin(admin.ModelAdmin):
+    """
+    A class for the slot admin to be able to 
+    edit how many slots (groups) are available 
+    at each time slot.
+    """
     list_display = ('slot_id', 'slot_name', 'max_slots')
 
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
+    """
+    A class for the booking admin to be able to
+    edit fields of the bookings, and to confirm
+    or deny bookings.
+    """
     list_filter = (
         'user',
         'name',

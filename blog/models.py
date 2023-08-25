@@ -7,6 +7,10 @@ STATUS = ((0, 'Draft'), (1, 'Posted'))
 
 
 class Post(models.Model):
+    """
+    A class for setting up the fields for the post
+    model and each field type/key.
+    """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     post_id = models.AutoField(primary_key=True)
@@ -20,16 +24,25 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
    
     class Meta:
+        """
+        A class to order the comments by
+        the date they were created.
+        """
         ordering = ['-created_date']
 
     def __str__(self):
+        """
+        Returns self
+        """
         return self.title
-
-    def like_count(self):
-        return self.likes.count()
 
 
 class Comment(models.Model):
+    """
+    A class for the comment model, this will take
+    various fields and values both from the user
+    and by the user.
+    """
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name='comments')
     name = models.CharField(max_length=50)
