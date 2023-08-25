@@ -1,5 +1,4 @@
-# Imports
-# 3rd Party
+# 3rd Party Imports
 from django.contrib import admin
 from rangefilter.filters import DateRangeFilter
 # Internal

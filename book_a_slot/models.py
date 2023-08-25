@@ -1,9 +1,7 @@
-# 3rd party:
+# 3rd Party Imports
 from django.db import models
 from phonenumber_field.modelfields import PhoneNumberField
 from django.contrib.auth.models import User
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 #  The store opens at middday and closes at 6PM each day.
 time_slots = (
     ('12:00', '12:00'),

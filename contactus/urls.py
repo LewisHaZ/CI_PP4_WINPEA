@@ -1,4 +1,4 @@
-# 3rd Party
+# 3rd Party Imports
 from django.urls import path
 # Internal
 from contactus import views

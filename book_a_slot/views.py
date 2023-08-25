@@ -1,5 +1,4 @@
-# Imports
-# 3rd Party
+# 3rd Party Imports
 from django.shortcuts import render, reverse, redirect
 from django.views import generic, View
 from django.contrib.auth.models import User

@@ -1,9 +1,6 @@
-# Imports
-# 3rd Party
+# 3rd Party Imports
 from django.shortcuts import render
 import os
-
-# Internal
 
 
 def home(request):

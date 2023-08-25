@@ -1,7 +1,6 @@
-# 3rd Party Import
+# 3rd Party Imports
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-
 # Internal
 from .models import ProductItem
 
