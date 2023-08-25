@@ -4,7 +4,12 @@ from cloudinary.models import CloudinaryField
 
 
 ITEM_TYPE = (
-    (0, 'Necklaces'), (1, 'Bags'), (2, 'Rings'), (3, 'Bracelets'), (4, 'New'))
+    (0, 'Necklaces'),
+    (1, 'Bags'),
+    (2, 'Rings'),
+    (3, 'Bracelets'),
+    (4, 'Earrings'),
+    (5, 'New'))
 
 
 # Model for Items

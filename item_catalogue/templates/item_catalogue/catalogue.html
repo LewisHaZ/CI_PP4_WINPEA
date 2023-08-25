@@ -7,17 +7,21 @@
             <div class="col-sm-8 mt-5 mb-5">
                 <h1 class="text-center">Catalogue - Products</h1>
                 <hr>
-            </div>
-        </div>
         <!-- Products List -->
         <div class="row justify-content-center">
             <!-- New List -->
             <div class="col-sm-8">
                 <em><h2>New</h2></em>
                 {% for item in product_list %}
-                {% if item.item_type == 0 %}
+                {% if item.item_type == 5 %}
                 <h3>{{ item.item_name }}</h3>
-                {{ item.description | safe }} £{{ item.price }}
+                {{ item.item_image }}
+                {{ item.description | safe}} £{{ item.price }}
+                {% if item.available == True %}
+                <h4><i class="fa-regular fa-face-smile-beam"></i> In stock</h4>
+                {% else %}
+                <h4><i class="fa-solid fa-face-sad-cry"></i> Out of stock</h4>
+                {% endif %}
                 {% endif %}
                 {% endfor %}
             </div>
@@ -25,11 +29,17 @@
             <div class="row justify-content-center">
                 <!-- Bags List -->
                 <div class="col-sm-8">
-                    <h2>Bags</h2>
+                   <hr><h2>Bags</h2><hr>
                     {% for item in product_list %}
-                    {% if item.item_type == 0 %}
+                    {% if item.item_type == 1 %}
                     <h3>{{ item.item_name }}</h3>
+                    {{ item.item_image }}
                     {{ item.description | safe }} £{{ item.price }}
+                    {% if item.available == True %}
+                    <h4><i class="fa-regular fa-face-smile-beam"></i> In stock</h4>
+                    {% else %}
+                    <h4><i class="fa-solid fa-face-sad-cry"></i> Out of stock</h4>
+                    {% endif %}
                     {% endif %}
                     {% endfor %}
                 </div>
@@ -37,11 +47,17 @@
             <div class="row justify-content-center">
                 <!-- Necklaces List-->
                 <div class="col-sm-8">
-                    <hr><h4>Necklaces</h4><hr>
+                    <hr><h2>Necklaces</h2><hr>
                     {% for item in product_list %}
-                    {% if item.item_type == 1 %}
-                    <h5>{{ item.item_name }}</h5>
+                    {% if item.item_type == 0 %}
+                    <h3>{{ item.item_name }}</h3>
+                    {{ item.item_image }}
                     {{ item.description | safe }} £{{ item.price }}
+                    {% if item.available == True %}
+                    <h4><i class="fa-regular fa-face-smile-beam"></i> In stock</h4>
+                    {% else %}
+                    <h4><i class="fa-solid fa-face-sad-cry"></i> Out of stock</h4>
+                    {% endif %}
                     {% endif %}
                     {% endfor %}
                 </div>
@@ -49,13 +65,57 @@
             <div class="row justify-content-center">
                 <!-- Bracelets List -->
                 <div class="col-sm-8">
-                    <hr><h4>Bracelets</h4><hr>
+                    <hr><h2>Bracelets</h2><hr>
                     {% for item in product_list %}
-                    {% if item.item_type == 2 %}
-                    <h5>{{ item.item_name }}</h5>
+                    {% if item.item_type == 3 %}
+                    <h3>{{ item.item_name }}</h3>
+                    {{ item.item_image }}
                     {{ item.description | safe }} £{{ item.price }}
+                    {% if item.available == True %}
+                    <h4><i class="fa-regular fa-face-smile-beam"></i> In stock</h4>
+                    {% else %}
+                    <h4><i class="fa-solid fa-face-sad-cry"></i> Out of stock</h4>
+                    {% endif %}
                     {% endif %}
                     {% endfor %}
                 </div>
             </div>
+            <div class="row justify-content-center">
+                <!-- Rings List -->
+                <div class="col-sm-8">
+                    <hr><h2>Rings</h2><hr>
+                    {% for item in product_list %}
+                    {% if item.item_type == 2 %}
+                    <h3>{{ item.item_name }}</h3>
+                    {{ item.item_image }}
+                    {{ item.description | safe }} £{{ item.price }}
+                    {% if item.available == True %}
+                    <h4><i class="fa-regular fa-face-smile-beam"></i> In stock</h4>
+                    {% else %}
+                    <h4><i class="fa-solid fa-face-sad-cry"></i> Out of stock</h4>
+                    {% endif %}
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Earrings List -->
+                <div class="col-sm-8">
+                    <hr><h2>Earrings</h2><hr>
+                    {% for item in product_list %}
+                    {% if item.item_type == 4 %}
+                    <h3>{{ item.item_name }}</h3>
+                    {{ item.item_image }}
+                    {{ item.description | safe }} £{{ item.price }}
+                    {% if item.available == True %}
+                    <h4><i class="fa-regular fa-face-smile-beam"></i> In stock</h4>
+                    {% else %}
+                    <h4><i class="fa-solid fa-face-sad-cry"></i> Out of stock</h4>
+                    {% endif %}
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
