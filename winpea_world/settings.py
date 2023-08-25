@@ -14,7 +14,6 @@ from pathlib import Path
 import os
 import dj_database_url
 from django.contrib.messages import constants as messages
-
 if os.path.isfile("env.py"):
     import env
 
@@ -42,6 +41,7 @@ CSRF_TRUSTED_ORIGINS = ['https://8000-lewishaz-cipp4winpea-mzbticeyhxd.ws-eu104.
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -51,16 +51,16 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'django.contrib.staticfiles',
     'cloudinary_storage',
+    'django.contrib.staticfiles',
     'cloudinary',
     'phonenumber_field',
     'django_summernote',
     'crispy_forms',
     'crispy_bootstrap5',
     'rangefilter',
-    'book_a_slot',
     'item_catalogue',
+    'book_a_slot',
     'home',
     'blog',
     'contactus',
