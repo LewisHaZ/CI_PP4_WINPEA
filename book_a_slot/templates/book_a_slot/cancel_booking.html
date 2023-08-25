@@ -15,7 +15,7 @@
                             {{ booking.requested_time }}</h6><br>
                         <h6 class="card-subtitle mb-2">Booking status: {{ booking.status }}.</h6>
                         <p class="card-text">No. of Guests: {{ booking.guest_count }}.</p>
-                        <p class="card-text">Slot {{booking.slot}}</p>
+                        <p class="card-text">Product of Interest: {{booking.slot}}</p>
                         <form method="POST">
                             {% csrf_token %}
                             <button class="btn btn-danger" type="submit">YES</button>

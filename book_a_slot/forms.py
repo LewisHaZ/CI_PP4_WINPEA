@@ -36,5 +36,6 @@ class BookingForm(forms.ModelForm):
             'email',
             'guest_count',
             'requested_date',
-            'requested_time'
+            'requested_time',
+            'slot'
         )
