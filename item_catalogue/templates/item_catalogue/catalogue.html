@@ -11,40 +11,51 @@
         </div>
         <!-- Products List -->
         <div class="row justify-content-center">
-            <!-- Bags List -->
+            <!-- New List -->
             <div class="col-sm-8">
-                <hr><h2>Bags</h2><hr>
+                <em><h2>New</h2></em>
                 {% for item in product_list %}
                 {% if item.item_type == 0 %}
-                <h3>{{ item.item_name }}</h3> 
+                <h3>{{ item.item_name }}</h3>
                 {{ item.description | safe }} £{{ item.price }}
                 {% endif %}
                 {% endfor %}
             </div>
-    </div>
-    <div class="row justify-content-center">
-        <!-- Necklaces List-->
-        <div class="col-sm-8">
-            <hr><h4>Necklaces</h4><hr>
-            {% for item in product_list %}
-            {% if item.item_type == 1 %}
-            <h5>{{ item.item_name }}</h5>
-            {{ item.description | safe }} £{{ item.price }}
-            {% endif %}
-            {% endfor %}
         </div>
-    </div>
-    <div class="row justify-content-center">
-        <!-- Bracelets List -->
-        <div class="col-sm-8">
-            <hr><h4>Bracelets</h4><hr>
-            {% for item in product_list %}
-            {% if item.item_type == 2 %}
-            <h5>{{ item.item_name }}</h5>
-            {{ item.description | safe }} £{{ item.price }}
-            {% endif %}
-            {% endfor %}
-        </div>
-
-</div>
+            <div class="row justify-content-center">
+                <!-- Bags List -->
+                <div class="col-sm-8">
+                    <h2>Bags</h2>
+                    {% for item in product_list %}
+                    {% if item.item_type == 0 %}
+                    <h3>{{ item.item_name }}</h3>
+                    {{ item.description | safe }} £{{ item.price }}
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Necklaces List-->
+                <div class="col-sm-8">
+                    <hr><h4>Necklaces</h4><hr>
+                    {% for item in product_list %}
+                    {% if item.item_type == 1 %}
+                    <h5>{{ item.item_name }}</h5>
+                    {{ item.description | safe }} £{{ item.price }}
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <!-- Bracelets List -->
+                <div class="col-sm-8">
+                    <hr><h4>Bracelets</h4><hr>
+                    {% for item in product_list %}
+                    {% if item.item_type == 2 %}
+                    <h5>{{ item.item_name }}</h5>
+                    {{ item.description | safe }} £{{ item.price }}
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
 {% endblock %}

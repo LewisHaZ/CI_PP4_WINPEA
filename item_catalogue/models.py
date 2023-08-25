@@ -1,5 +1,6 @@
 # 3rd Party Imports
 from django.db import models
+from cloudinary.models import CloudinaryField
 
 
 ITEM_TYPE = (
@@ -16,6 +17,7 @@ class ProductItem(models.Model):
         max_length=50,
         unique=True
         )
+    item_image = CloudinaryField('image', default='placeholder')
     description = models.CharField(
         max_length=200,
         unique=True
