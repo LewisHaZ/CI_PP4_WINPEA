@@ -17,7 +17,7 @@
                 {% for item in product_list %}
                 {% if item.item_type == 0 %}
                 <h3>{{ item.item_name }}</h3> 
-                <p><em>{{ item.description | safe }} £{{ item.price }}</em></p>
+                {{ item.description | safe }} £{{ item.price }}
                 {% endif %}
                 {% endfor %}
             </div>
@@ -29,7 +29,7 @@
             {% for item in product_list %}
             {% if item.item_type == 1 %}
             <h5>{{ item.item_name }}</h5>
-            <p><em>{{ item.description | safe }} £{{ item.price }}</em></p>
+            {{ item.description | safe }} £{{ item.price }}
             {% endif %}
             {% endfor %}
         </div>
@@ -41,7 +41,7 @@
             {% for item in product_list %}
             {% if item.item_type == 2 %}
             <h5>{{ item.item_name }}</h5>
-            <p><em>{{ item.description | safe }} £{{ item.price }}</em></p>
+            {{ item.description | safe }} £{{ item.price }}
             {% endif %}
             {% endfor %}
         </div>

@@ -22,10 +22,11 @@
                         {% if user.is_authenticated %}
                         <div class="row text-center">
                             <div class="col-12">
-                                <h5 class="fw-bold mt-3">Contact Us</h5><hr>
+                                <h5 class="fw-bold mt-3">Contact Us</h5>
+                                <hr>
                             </div>
                         </div>
-                        <form action="" method="POST" enctype="multipart/form-data">
+                        <form method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
                             <!-- Contact form -->
                             {{ contact_form| crispy }}
@@ -59,7 +60,8 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col text-center">
-                        <h4>Find the Winpea store here !</h4><hr>
+                        <h4>Find the Winpea store here !</h4>
+                        <hr>
                         <p>Gallery House</p>
                         <p>127 The Headrow</p>
                         <p>Leeds</p>
@@ -68,7 +70,7 @@
                         <p>+447123456789</p>
                     </div>
                     <hr>
-                    <div class="col-12 rounded booking-card map-responsive">
+                    <div class="col-12 rounded map-responsive">
                         <!-- Google map -->
                         <iframe
                          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1178.218311254843!2d-1.547625!3d53.799514!3m2!1i1024!2i768!4f13
