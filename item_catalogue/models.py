@@ -22,7 +22,7 @@ class ProductItem(models.Model):
         max_length=200,
         unique=True
         )
-    price = models.FloatField()
+    price = models.IntegerField()
     item_type = models.IntegerField(
         choices=ITEM_TYPE,
         default=4
