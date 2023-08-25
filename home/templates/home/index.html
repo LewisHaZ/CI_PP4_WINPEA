@@ -25,7 +25,7 @@
 <div class="container-fluid">
     <div class="row text-center mt-5">
         <h1>Welcome to Winpea</h1>
-        <p><em>A brand that transcends any Gender, Border, Age & Size</em></p>
+        <p class="excerpt"><em>A brand that transcends any Gender, Border, Age & Size</em></p>
     </div>
 </div>
 
@@ -61,16 +61,16 @@
             </div>
         </div>
 </section>
-
+<hr>
 <div class="container-fluid">
     <div class="row text-center">
-        <p><em>Allow us to welcome you to our store, along with any of your friends and family.</em></p>
-        <h2> We have Jewellery for all special events! </h2>
+        <p class="excerpt"><em>Allow us to welcome you to our store, along with any of your friends and family.</em></p>
     </div>
 </div>
 <section class="container-fluid">
     <div class="row d-flex my-5 justify-content-center">
-        <div class="col-md-4 p-3 mt-5 rounded text-center">
+        <div class="col-md-4 p-1 mt-5 rounded text-center">
+            <h2> We have Jewellery for all special events! </h2>
             <h3> These are inclusive of: </h3>
                 <ul>
                     <li>Birthdays</li>
@@ -82,7 +82,7 @@
                 </ul>
                 <p><em>Please contact us to schedule your viewing today!</em></p>
         <div class="col-12 mt-5">
-            <img src="{% static 'images/special-event-promo.webp' %}" alt="photo of woman with wedding dress and Jewellery">
+            <a href="{% url 'contactus' %}"><img src="{% static 'images/special-event-promo.webp' %}" alt="photo of woman with wedding dress and Jewellery"></a> 
         </div>
     </div>
 </div>
