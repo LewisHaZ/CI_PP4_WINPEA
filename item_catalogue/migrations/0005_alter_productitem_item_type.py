@@ -13,6 +13,13 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='productitem',
             name='item_type',
-            field=models.IntegerField(choices=[(0, 'Necklaces'), (1, 'Bags'), (2, 'Rings'), (3, 'Bracelets'), (4, 'Earrings'), (5, 'New')], default=4),
+            field=models.IntegerField(
+                choices=[
+                    (0, 'Necklaces'),
+                    (1, 'Bags'),
+                    (2, 'Rings'),
+                    (3, 'Bracelets'),
+                    (4, 'Earrings'),
+                    (5, 'New')], default=4),
         ),
     ]
