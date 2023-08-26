@@ -7,31 +7,36 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
+<div class="container-fluid mt-5">
+  <div class="row d-flex justify-content-center">
+      <div class="col-sm-8 mt-5 mb-5">
+          <h1 class="text-center">Please Login</h1><hr>
+      </div>
+  </div>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4 offset-md-2 p-3 mb-5 mx-auto">
 
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-sm-5 mt-3 p-3">
+        <h1>{% trans "Login" %}</h1>
 
-      <h1>{% trans "Login" %}</h1>
+        <p>{% blocktrans %}If you have not created an account yet, then please
+          <a class="link_color" href="{{ signup_url }}">register</a> first.{% endblocktrans %}</p>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-sm-5 mt-3 p-3">
 
-      <p>{% blocktrans %}If you have not created an account yet, then please
-        <a class="link_color" href="{{ signup_url }}">register</a> first.{% endblocktrans %}</p>
+        <form class="login" method="POST" action="{% url 'account_login' %}">
+          {% csrf_token %}
+          {{form| crispy}}
+          {% if redirect_field_value %}
+          <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
+          {% endif %}
+          <a class="button secondaryAction link_color" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
+          <button class="btn btn-success" type="submit">{% trans "Log in" %}</button>
+        </form>
+      </div>
     </div>
   </div>
-  <div class="row justify-content-center">
-    <div class="col-sm-5 mt-3 p-3">
-
-      <form class="login" method="POST" action="{% url 'account_login' %}">
-        {% csrf_token %}
-        {{form| crispy}}
-        {% if redirect_field_value %}
-        <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
-        {% endif %}
-        <a class="button secondaryAction link_color" href="{% url 'account_reset_password' %}">{% trans "Forgot Password?" %}</a>
-        <button class="btn btn-success" type="submit">{% trans "Log in" %}</button>
-      </form>
-    </div>
-  </div>
-</div>
 
 {% endblock %}
