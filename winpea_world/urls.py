@@ -1,4 +1,4 @@
-# Imports 
+# Imports
 # 3rd Party
 from django.contrib import admin
 from django.urls import path, include
