@@ -39,15 +39,14 @@
 
         {% if postings.has_previous %}
 
-        <a href="?page=1">&laquo First</a>
-        <a href="?page={{ postings.previous_page_number }}">Previous</a>
-        Page {{ postings.number }} of {{postings.paginator.num_pages }}
+        <a class="link_color" href="?page=1">&laquo First</a>
+        <a class="link_color" href="?page={{ postings.previous_page_number }}">Previous</a>
         {% endif %}
-
+        Page {{ postings.number }} of {{postings.paginator.num_pages }}
         {% if postings.has_next %}
 
-        <a href="?page={{ postings.next_page_number }}">Next</a>
-        <a href="?page={{ postings.paginator.num_pages }}">Last &raquo</a>
+        <a class="link_color" href="?page={{ postings.next_page_number }}">Next</a>
+        <a class="link_color" href="?page={{ postings.paginator.num_pages }}">Last &raquo</a>
         {% endif %}
 
         </div>

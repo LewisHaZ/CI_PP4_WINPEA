@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
 ALLOWED_HOSTS = ['winpea-world.herokuapp.com', 'winpea-world-560ce7552450.herokuapp.com', 'localhost', '8000-lewishaz-cipp4winpea-mzbticeyhxd.ws-eu104.gitpod.io']
