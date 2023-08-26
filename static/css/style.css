@@ -64,10 +64,3 @@ ul{
     list-style-type: none;
 }
 
-
-@media screen and (max-width: 568px) {
-    .catalogue-img{
-        width: 10%;
-        height: 10%;
-    }
-}
