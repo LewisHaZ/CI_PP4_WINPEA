@@ -10,12 +10,13 @@
         <!-- Products List -->
         <div class="row justify-content-center">
             <!-- New List -->
-            <div class="col-sm-8">
+            <div class="col-sm-8 text-center">
                 <em><h2>New</h2></em>
                 {% for item in product_list %}
                 {% if item.item_type == 5 %}
                 <h3>{{ item.item_name }}</h3>
-                <img src="{{ item.item_image.url }}" alt="item image">
+                <img class="img-thumbnail" src="{{ item.item_image.url }}" alt="item image">
+                <hr>
                 {{ item.description | safe}} £{{ item.price }}
                 {% if item.available == True %}
                 <h4><i class="fa-regular fa-face-smile-beam"></i> In stock</h4>
@@ -28,12 +29,12 @@
         </div>
             <div class="row justify-content-center">
                 <!-- Bags List -->
-                <div class="col-sm-8">
+                <div class="col-sm-8 text-center">
                    <hr><h2>Bags</h2><hr>
                     {% for item in product_list %}
                     {% if item.item_type == 1 %}
                     <h3>{{ item.item_name }}</h3>
-                    <img src="{{ item.item_image.url }}" alt="item image">
+                    <img class="img-thumbnail" src="{{ item.item_image.url }}" alt="item image">
                     {{ item.description | safe }} £{{ item.price }}
                     {% if item.available == True %}
                     <h4><i class="fa-regular fa-face-smile-beam"></i> In stock</h4>
@@ -46,12 +47,12 @@
             </div>
             <div class="row justify-content-center">
                 <!-- Necklaces List-->
-                <div class="col-sm-8">
+                <div class="col-sm-8 text-center">
                     <hr><h2>Necklaces</h2><hr>
                     {% for item in product_list %}
                     {% if item.item_type == 0 %}
                     <h3>{{ item.item_name }}</h3>
-                    <img src="{{ item.item_image.url }}" alt="item image">
+                    <img class="img-thumbnail" src="{{ item.item_image.url }}" alt="item image">
                     {{ item.description | safe }} £{{ item.price }}
                     {% if item.available == True %}
                     <h4><i class="fa-regular fa-face-smile-beam"></i> In stock</h4>
@@ -64,12 +65,12 @@
             </div>
             <div class="row justify-content-center">
                 <!-- Bracelets List -->
-                <div class="col-sm-8">
+                <div class="col-sm-8 text-center">
                     <hr><h2>Bracelets</h2><hr>
                     {% for item in product_list %}
                     {% if item.item_type == 3 %}
                     <h3>{{ item.item_name }}</h3>
-                    <img src="{{ item.item_image.url }}" alt="item image">
+                    <img class="img-thumbnail" src="{{ item.item_image.url }}" alt="item image">
                     {{ item.description | safe }} £{{ item.price }}
                     {% if item.available == True %}
                     <h4><i class="fa-regular fa-face-smile-beam"></i> In stock</h4>
@@ -82,12 +83,12 @@
             </div>
             <div class="row justify-content-center">
                 <!-- Rings List -->
-                <div class="col-sm-8">
+                <div class="col-sm-8 text-center">
                     <hr><h2>Rings</h2><hr>
                     {% for item in product_list %}
                     {% if item.item_type == 2 %}
                     <h3>{{ item.item_name }}</h3>
-                    <img src="{{ item.item_image.url }}" alt="item image">
+                    <img class="img-thumbnail" src="{{ item.item_image.url }}" alt="item image">
                     {{ item.description | safe }} £{{ item.price }}
                     {% if item.available == True %}
                     <h4><i class="fa-regular fa-face-smile-beam"></i> In stock</h4>
@@ -100,12 +101,12 @@
             </div>
             <div class="row justify-content-center">
                 <!-- Earrings List -->
-                <div class="col-sm-8">
+                <div class="col-sm-8 text-center">
                     <hr><h2>Earrings</h2><hr>
                     {% for item in product_list %}
                     {% if item.item_type == 4 %}
                     <h3>{{ item.item_name }}</h3>
-                    <img src="{{ item.item_image.url }}" alt="item image">
+                    <img class="img-thumbnail" src="{{ item.item_image.url }}" alt="item image">
                     {{ item.description | safe }} £{{ item.price }}
                     {% if item.available == True %}
                     <h4><i class="fa-regular fa-face-smile-beam"></i> In stock</h4>

@@ -40,13 +40,6 @@ body {
     background-color: rgba(190, 172, 172, 0.897);
 }
 
-.img-responsive {
-    height: auto;
-    width: auto;
-    max-height: 72px;
-    max-width: 250px;
-}
-
 .excerpt{
     color: #353535be;
 }
@@ -71,9 +64,10 @@ ul{
     list-style-type: none;
 }
 
-.blog-image{
-    height: auto;
-    width: auto;
-    max-height: 72px;
-    max-width: 250px;
+
+@media screen and (max-width: 568px) {
+    .catalogue-img{
+        width: 10%;
+        height: 10%;
+    }
 }

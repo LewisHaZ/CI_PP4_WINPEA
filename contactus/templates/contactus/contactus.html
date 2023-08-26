@@ -14,9 +14,11 @@
                         <div class="row text-center">
                             <h3>Contact Us</h3>
                             <p>Please login to get in Contact!</p>
-                            <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
-                                    Page</a></button>
                         </div>
+                            <div class="text-center">
+                            <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
+                                Page</a></button>
+                            </div>
                         {% else %}
                         <!-- Display form if user is logged in-->
                         {% if user.is_authenticated %}
