@@ -24,7 +24,6 @@ body {
 
 .card {
     background-color: #a19d9d;
-    padding: 20px;
 }
 
 .card-img-top{
@@ -38,6 +37,13 @@ body {
 
 .bg-light {
     background-color: rgba(190, 172, 172, 0.897);
+}
+
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
 }
 
 .excerpt{
@@ -60,7 +66,6 @@ body {
     position:absolute;
     }
 
-ul{
-    list-style-type: none;
+.sidescroll {
+     overflow-x: hidden;
 }
-
