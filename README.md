@@ -1,25 +1,13 @@
 
 
+### ** Winpea World - Jewellery Store (WIP)** 
+
+
+
 Developer: **Lewis Hazelwood**
 
-## Introduction
-### **# Winpea World - Jewellery Store (WIP)** 
-* (In Progress)
-
-
-
-
 Deployed Site:
-[Github](https://winpea-world.herokuapp.com/)
-
-
-
-# Main features
-* Admin functionality -
-
-
-[Deployed Site]()  
-(Note: Ctrl + click to open in a new tab)    
+[Winpea world - site](https://winpea-world-560ce7552450.herokuapp.com/)
 
 
 ## Table of Content
