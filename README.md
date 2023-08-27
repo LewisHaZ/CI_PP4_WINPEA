@@ -488,6 +488,12 @@ The W3C Markup Validation Service was used to validate the HTML code for the web
 - Contact us [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Fcontactus%2F)
 - 404 page [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Fvisit_stores%2F) - 404 is detected
 
+### CSS Validation
+The W3C Jigsaw CSS Validation Service
+<details><summary>style.css</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/css-validaiton.png">
+</details><hr>
+
 ## Testing
 
 * 
