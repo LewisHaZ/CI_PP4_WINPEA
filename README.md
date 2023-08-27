@@ -473,8 +473,21 @@ The wireframes were created using Balsamiq
 ##### Back to [top](#table-of-contents)<hr>
 
 ## Validation
-
-
+### HTML Validation
+The W3C Markup Validation Service was used to validate the HTML code for the webiste. All pages have passed the checks and have no errors - this can be checked at any time.
+- Home [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2F)
+- Register [results]
+- Login [results]
+- Logout [results]
+- Bookings [results]
+- Edit Booking [results]
+- Cancel Booking [results]
+- Catalogue [results]
+- Blog [results]
+- Blog Expanded [results]
+- Contact us [results]
+- Confirmed [results]
+- 404 page [results]
 
 ## Testing
 
