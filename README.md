@@ -263,26 +263,29 @@ The wireframes were created using Balsamiq
 
 ## Technologies Used
 
-### Languages
+### Languages & Frameworks
 - [Python](https://www.python.org/)
 - [Javascript](https://www.javascript.com/)
 - [HTML](https://www.w3.org/)
 - [CSS](https://www.w3.org/)
-
-
-
-### Resources Used
-- [Canva](https://www.canva.com/)
-- [Colors.co](https://coolors.co/)
-
-
-### Frameworks and Tools
+- [Django](https://www.djangoproject.com/)
 - [Bootstrap](https://getbootstrap.com//)
 
+
+### Tools
+
 - [Balsamiq](https://balsamiq.com/)
-
+- [Cloudinary](https://cloudinary.com/)
+- [Favicon.io](https://favicon.io)
+- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
+- [Font Awesome](https://fontawesome.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Heroku Platform](https://id.heroku.com/login)
+- [jQuery](https://jquery.com)
+- [Postgres](https://www.postgresql.org/)
+- [Summernote](https://summernote.org/)
+- [Git](https://git-scm.com/)
 - [GitPod](https://gitpod.io/)
-
 - [GitHub](https://github.com/)
 
 [Back to Top](<#Table-of-Content>)
