@@ -494,6 +494,12 @@ The W3C Jigsaw CSS Validation Service
 <img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/css-validaiton.png">
 </details><hr>
 
+### JS Validation
+JSLint: The JavaScript Code Quality Coverage Tool
+<details><summary>script.js</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/js-validaiton.png">
+</details><hr>
+
 ## Testing
 
 * 
