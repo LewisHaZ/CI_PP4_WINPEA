@@ -11,7 +11,7 @@
         <div class="row justify-content-center">
             <!-- New List -->
             <div class="col-sm-8 text-center">
-                <em><h2>New</h2></em>
+                <h2>New</h2>
                 {% for item in product_list %}
                 {% if item.item_type == 5 %}
                 <h3>{{ item.item_name }}</h3>
@@ -27,6 +27,7 @@
                 {% endfor %}
             </div>
         </div>
+    </div>
             <div class="row justify-content-center">
                 <!-- Bags List -->
                 <div class="col-sm-8 text-center">
@@ -119,4 +120,5 @@
             </div>
         </div>
     </div>
+</div>
 {% endblock %}
