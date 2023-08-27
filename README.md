@@ -112,26 +112,47 @@ Winpea World is a Jewellery brand and store based in Leeds, England (UK). People
 - GitHub Kanban was used to track all open user stories.
 - Todo, In progress and Done were used to track all issues in the Kanban
 
+<details><summary>Kanban</summary>
+
+![Kanban complete](https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/features/kanban.complete.png)
+
+</details>
+
 <details><summary>Epics</summary>
 
-[Back to Top](<#table-of-content>)
-## Technical Design
+![Epics](https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/features/kanban-epics.png)
+![Epic 1](https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/features/kanban-epics-1.png)
+![Epic 2](https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/features/kanban-epics-2.png)
+![Epic 3](https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/features/kanban-epics-3.png)
+![Epic 4](https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/features/kanban-epics-4.png)
 
+</details>
 
-### Flow Charts
+<details><summary>User Stories</summary>
 
-<details><summary>Flow</summary>
-<img src="">
-</details>  
+![User stories](https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/features/user-stories.png)
 
+</details>
 
-### Wireframes
+##### Back to [top](#table-of-contents)<hr>
 
-<details><summary>Home & Article Page</summary>
-<img src="">
-</details>  
+## Design
 
+### Colours
 
+The Winpea brand is a black and white design so for the site I kept with the brighter but simple feel to the sites design.
+Upon doing some market research on other brands I was able to discern that simple colour palettes are usually favoured in
+the design of Fashion websites.
+
+Colours used include white, grey, black and a light/darker shade of blues for the footer.
+
+### Fonts
+
+Fonts were taken from Google Fonts; I used Playfair Display with sans serif as a backup.
+
+### Structure
+
+#### Website pages
 
 
 ## Technologies Used
