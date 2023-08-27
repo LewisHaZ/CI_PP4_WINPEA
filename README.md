@@ -114,7 +114,7 @@ Winpea World is a Jewellery brand and store based in Leeds, England (UK). People
 
 <details><summary>Kanban</summary>
 
-![Kanban complete](https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/features/kanban.complete.png)
+![Kanban complete](https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/features/kanban-complete.png)
 
 </details>
 
@@ -153,6 +153,112 @@ Fonts were taken from Google Fonts; I used Playfair Display with sans serif as a
 ### Structure
 
 #### Website pages
+
+The site has been designed in a way that the user will easily be able to access any page with a navbar at the top to navigate and hamburger menu for
+small screen users.
+
+The footer contains links to social media such as an Instagram page which has relevant content on the Winpea brand, this can in turn expand the customer base and boost sales
+as it can easily be shared.
+
+- The site consists of the following pages:
+  - Homepage with cards for the user to choose to book a slot, view the community blog or our product catalogue
+  - Catalogue has a list of all available and unavailable products from the database sorted by bags, necklaces, bracelets, earrings and new.
+  - Blog page has a paginated list of blogs posted by an admin or authorised user, 4 per page
+  - Blog expanded displays a blog the user has selected so they can read the blog, if they are logged in they can also leave a comment which will then need to be approved before it is displayed
+  - Book page allows registered users to book a slot , change guest count, date requested, time requested and a product of interest to notify staff.
+  - My bookings displays all bookings for the user that they have made, bookings in the past are automatically expired
+  - Edit booking allows the user to change their date, time, product of interest and guest count
+  - Cancel booking allows the user to cancel the booking which will then delete it from the database
+  - Contact us allows the user to send us a message if the are registered, or they can contact us from the displayed email and phone number or visit the address listed.
+  - Login / Logout allows users to login to make bookings, view, edit, and delete bookings
+  - Register allows the user to register so they can use the booking system
+  - 404 error page to display if a 404 error is raised
+
+#### Database
+
+- Built with Python and the Django framework with a database of a Postgres for the deployed Heroku version(production)
+- Two database model shows all the fields stored in the database
+
+<details><summary>Show diagram</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/database-schema.png">
+</details>
+
+##### User Model
+The User Model contains the following:
+- user_id
+- password
+- last_login
+- is_superuser
+- username
+- first_name
+- last_name
+- email
+- is_staff
+- is_active
+- is_banned
+- date_joined
+
+#### ProductItem Model
+The ProductItem Model contains the following:
+- item_id
+- item_name
+- item_image
+- price
+- available
+
+#### Slot Model
+The Slot Model contains the following:
+- slot_id
+- max_slots
+- available
+
+#### Booking Model
+The Booking Model contains the following:
+- booking_id (PrimaryKey)
+- created_date
+- requested_date
+- requested_time
+- slot (ForeignKey)
+- customer (ForeignKey)
+- status
+- customer_count
+
+#### Post Model (Blog)
+- title
+- post_id (PrimaryKey)
+- author (ForeignKey)
+- created_date
+- updated_date
+- content
+- featured_image
+- excerpt
+- slug
+- status
+
+#### Comment Model (Blog)
+- post (ForeignKey)
+- name
+- email
+- body
+- created_date
+- approved
+- Meta: created_on
+
+
+##### ContactUs Model
+The ContactUs Model contains the following:
+- contact_id (PrimaryKey)
+- name (ForeignKey)
+- email (ForeignKey)
+- phone (ForeignKey)
+- body
+
+
+### Wireframes
+The wireframes were created using Balsamiq
+<details><summary></summary>
+<img src="docs/wireframes.png">
+</details>
 
 
 ## Technologies Used
