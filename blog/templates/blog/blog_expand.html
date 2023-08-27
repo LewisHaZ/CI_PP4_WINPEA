@@ -20,6 +20,7 @@
             <h1>{{ post.title }}</h1>
             {{ post.content| safe }}
             {{ post.image.url }}
+            </div>
         </div>
     </div>
 </div>
@@ -50,8 +51,8 @@
     <div class="text-center p-3">
         <h3>Comment</h3>
         <p>Please login to comment on this post</p>
-        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
-                Page</a></button>
+        <a class="link_color" href="{% url 'account_login' %}">Go to Login
+                Page</a>
     </div>
     {% else %}
     <div class="row justify-content-center">
