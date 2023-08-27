@@ -287,53 +287,193 @@ The wireframes were created using Balsamiq
 - [Git](https://git-scm.com/)
 - [GitPod](https://gitpod.io/)
 - [GitHub](https://github.com/)
+- Validation:
+  - [WC3 Validator](https://validator.w3.org/)
+  - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
+  - [JShint](https://jshint.com/)
+  - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
+  - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+  - [Wave Validator](https://wave.webaim.org/)
 
-[Back to Top](<#Table-of-Content>)
 
-### Libraries
-
-#### Python Libraries
-- [OS](https://docs.python.org/3/library/os.html)
-- [Date time](https://docs.python.org/3/library/datetime.html)
-
+##### Back to [top](#table-of-contents)
 
 
 ## Features
 
-<details><summary>Home</summary>
-</details>  
+### Home Page
+- Home page includes nav bar, main body and a footer.
 
-<details><summary>Feature</summary>
-</details>  
+<details><summary>See feature images</summary>
 
-<details><summary>Feature</summary>
-</details>  
-
-<details><summary>Feature</summary>
-</details>  
-
-<details><summary>About</summary>
-</details>  
-
-<details><summary>Contact</summary>
+![Home page](docs/features/features-homepage.jpg)
 </details> 
 
+### Logo & Navigation
+- Custom logo for the business
+- Fully Responsive
+- On small screens switches to hamburger menu
+- Indicates login/logout in status
+- Displayed on all pages
 
-[Back to Top](<#table-of-content>)
+<details><summary>See feature images</summary>
+
+![nav](docs/features/features-navbar.png)
+![nav](docs/features/features-navbar-login.png)
+![nav](docs/features/features-navbar-small.png)
+</details>
+
+### Footer
+- Contains social media links and copyright
+- displayed across all pages
+
+<details><summary>See feature images</summary>
+
+![Footer](docs/features/features-footer.png)
+</details>
+
+### Sign up / Register
+- Allow users to register an acoount
+- Username and password is required, email is optional
+
+<details><summary>See feature images</summary>
+
+![Register](docs/features/features-register.png)
+</details>
+
+### Login
+- User can login to create a booking, view bookings, edit and delete bookings
+- User is prompted if they are not entering correct user login details
+
+<details><summary>See feature images</summary>
+
+![Login](docs/features/features-login.png)
+![Login](docs/features/features-login-incorrect.png)
+</details>
+
+### Logout
+- Allows the user to securely log out
+- Ask user if they are sure they want to log out
+
+<details><summary>See feature images</summary>
+
+![Logout](docs/features/features-logout.png)
+</details>
+
+### Book
+- Allows the user to book a slot using the booking form
+- Messages are displayed if the data is not valid such as phone number lenght is too short and the email address is not a valid format
+- Users can see when their booking is successful
+
+<details><summary>See feature images</summary>
+
+![Book](docs/features/features-booking-slot.png)
+![Book](docs/features/features-booking-slot-valid.png)
+![Book](docs/features/features-booking-slot-double.png)
+![Book](docs/features/features-booking-slot-valid.png)
+</details>
+
+### My Bookings
+- Allows the user to see all their bookings in a paginated layout, 4 per page
+- If the booking is older than today it is automatically expired for the user
+- Status of the booking is displayed, awaiting confirmation and when approved will then change to confirmed status for the user
+
+<details><summary>See feature images</summary>
+
+![My Bookings](docs/features/features-my-bookings.png)
+</details>
+
+
+### Edit Booking
+- Allows the user to edit their booking to another date, time, guest count and slot
+<details><summary>See feature images</summary>
+
+![Edit Booking](docs/features/features-edit-booking.png)
+</details>
+
+
+### Cancel Booking 
+- Allows the user to cancel their booking, asks user are they sure
+  
+<details><summary>See feature images</summary>
+
+![Cancel Booking](docs/features/features-booking-cancel.png)
+</details>
+
+### Catalogue
+- The catalogue displays all available and out of stock products
+- Catalogue is categorised into each type of producet
+- Items can be added via the admin panel in the backend by staff
+- Staff can create, update and delete products via the admin panel
+  
+<details><summary>See feature images</summary>
+
+![Catalogue](docs/features/features-catalogue.png)
+</details>
+
+### Blog
+- The blog displays each post made by a staff member
+- Paginations is used to display 4 posts per page
+  
+<details><summary>See feature images</summary>
+
+![Blog](docs/features/features-blog.png)
+</details>
+
+### Blog Expanded
+- Expands into the selected blog the user wishes to read
+- Displays a featured image uploaded by the poster
+- If no image is uploaded a default image is then used
+- Registered user can comment on the blog
+  
+<details><summary>See feature images</summary>
+
+![Blog Expanded](docs/features/features-blog-2-1.jpg)
+</details>
+
+### Comments
+- Comments made are set to pending approval status to ensure nothing explicit is displayed
+- Only registered users can comment on a blog post
+- Staff can approve comments via the admin panel on the backend
+  
+<details><summary>See feature images</summary>
+
+![Comments](docs/features/features-blog-comment.png)
+</details>
+
+### Contact Us
+- Registered users can DM staff via the message box
+- Contact info such as, phone, email, and address is displayed
+- A Google Map is embedded with the address for users to use
+  
+<details><summary>See feature images</summary>
+
+![Contact Us](docs/features/features-contactus.png)
+</details>
+
+### Social Media Links
+- A logo and link is used for each social media displayed
+- All links open in a new tab to ensure user is not directed away from the business
+- Displayed on all pages
+  
+<details><summary>See feature images</summary>
+
+![Social Media Links](docs/features/features-social-links.png)
+</details>
+
+### Pagination
+- Pagination is used on the bookings list and the blog page
+- Ensures the page is kept tidy as only 4 items are displayed per page
+  
+<details><summary>See feature images</summary>
+
+![Pagination](docs/features/features-page-pagination.png)
+</details>
+
+##### Back to [top](#table-of-contents)<hr>
+
 ## Validation
 
-### PEP8 Validation
-<details><summary>page</summary>
-<img src="">
-</details>
-
-<details><summary>Page</summary>
-<img src="">
-</details>
-
-<details><summary>Page</summary>
-<img src="">
-</details>  
 
 
 ## Testing
