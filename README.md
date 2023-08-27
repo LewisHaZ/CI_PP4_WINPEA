@@ -1,91 +1,118 @@
-
-
-### ** Winpea World - Jewellery Store (WIP)** 
-
-
-
+# ** Winpea World - Jewellery Store ** 
+ 
+![Am I Responsive](docs/am-i-responsive.png)
 Developer: **Lewis Hazelwood**
 
 Deployed Site:
 [Winpea world - site](https://winpea-world-560ce7552450.herokuapp.com/)
 
 
-## Table of Content
-1. [Project Goals](#project-goals)
-   1. [User Goals](#user-goals)
-   2. [Site owner Goals](#site-owner-goals)
-2. [User Experience](#User-Experience)
-   1. [Target Audience](#target-audience)
-   2. [User Requirements and Expectations](#user-requirments-and-expectations)
-   3. [Manual](#manual)
-   4. [User Stories](#user-stories)
-3. [Technical Design](#technical-design)
-   1. [Flowcharts](#flowcharts)
-   2. [Wireframes](#wireframes)
-4. [Technologies Used](#technologies-used)
-   1. [Languages](#Languages)
-   2. [Frameworks and Tools](#frameworks-and-tools)
-5. [Features](#features)
-6. [Testing](#validation)
-7. [PEP8 Validation](#pep8-validation)
-8. [Bugs](#bugs)
-9. [Deployment](#deployment)
-10. [Credits](#credits)
-11. [Acknowledgements](#ackowledgements)
+## Table of Contents
+  - [About](#about)
+  - [User Goals](#user-goals)
+  - [Site Owner Goals](#site-owner-goals)
+  - [User Experience](#user-experience)
+  - [User Stories](#user-stories)
+  - [Design](#design)
+    - [Colours](#colours)
+    - [Fonts](#fonts)
+    - [Structure](#structure)
+      - [Website pages](#website-pages)
+      - [Database](#database)
+    - [Wireframes](#wireframes)
+  - [Technologies Used](#technologies-used)
+  - [Features](#features)
+  - [Validation](#validation)
+  - [Testing](#testing)
+    - [Manual testing](#manual-testing)
+    - [Automated testing](#automated-testing)
+    - [Tests on various devices](#tests-on-various-devices)
+    - [Browser compatibility](#browser-compatibility)
+  - [Bugs](#bugs)
+  - [Heroku Deployment](#heroku-deployment)
+  - [Credits](#credits)
+  - [Acknowledgements](#acknowledgements)
+
+### About 
+
+Winpea World is a Jewellery brand and store based in Leeds, England (UK). People who are interested in visiting and purchasing products can create an account, book a slot, read through blog posts and view the product catalogue.
+<hr>
 
 ## Project Goals
 
 ### User Goals
-- 
-- 
-- 
-- 
+- To create a slot (booking/reservation) for visitng the store
+- To be able to view, edit and cancel slots
+- To view a catalogue of products
+- To be able to contact the business
+- To be able to view a blog
 
 ### Site Owner Goals
-- 
-- 
-- 
-- 
+- To attract customers to the store and sell products
+- Fully responsive website and ease of access
+- Provide a way to book a slot online without need for a phone call.
+- Increased online presence in order to boost sales.
+<hr>
 
-[Back to Top](<#table-of-content>)
 ## User Experience
 
 ### Target Audience
-- 
+- People who are looking to purchase gifts for their family or friends.
+- Past and new customers to our business.
+- Tourists to the Leeds area who are shopping around.
+- People looking to purchase anniversary gifts.
+- Companies/anyone looking to host celebration parties in-store.
 
 ### User Requirments and Expectations
-- 
-- 
-- 
-- 
+- Fully responsive
+- Accessibility
+- Clear and easy to read webpage
+- Social Media
+- Contact Information
 
+##### Back to [top](#table-of-contents)<hr>
 
-[Back to Top](<#table-of-content>)  
 ## User Stories
 
-### User
-1. As a User I can 
-2. As a User I can 
-3. As a User I can 
-4. As a User I can 
-5. As a User I can 
-6. As a User I can 
-7. As a User I can 
+### Users
+1. As a User I can navigate across the site so that I can move to each feature of the site easily (Must have)
+2. As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials (Must have)
+3. As a Site Owner I can provide a contact us page so that users can get in touch with my business (Must have)
+4. As a User I can use a navbar, footer, and social icons so that I can navigate the site, access menus, and access socials (Must have)
+5. As a User I can create a booking by selecting a date and time so that I can reserve my slot (Must have) 
+6. As a User I can update my booking so that I can choose another available time and date (Must have)
+7. As a User I can delete my booking so that I can cancel my slot (Must have)
+8. As a user I can view my booking so that I can remind myself of the date and time I have booked (Must have)
+9. As a User I can I am notified so that I know my action of creation, edit, or deletion of a booking has been successful (Must have)
+10. As a User I can register as prompted so that I can make a booking if I wish reserve a slot (Must have)
+11. As a User I can register to create an account so that my details are stored for faster booking in future (Must have)
+12. As a user I can login so that I can book a slot (Must have)
+13. As a user I can see my login status so that I know if I am logged in or not (Must have)
+14. As a User I can view the site's blog so that I can learn additional information and read articles (Should have)
+15. As a User I can view the product catalogue so that I can decide whether to visit the store (Must have)
+16. As a User I cannot book a date in the past so that my booking is valid (Must have)
+17. As a User I can view blog posts page by page so that I can browse without seeing an overloaded page (Should have)
+18. As a User I can not book a slot already booked so that my booking is valid and not double booked (Must have)
 
-### Admin/Authorised User
-8. As an Admin/Authorised User I can 
-9. As an Admin/Authorised User I can 
-10. As an Admin/Authorised User I can 
-11. As an Admin/Authorised User I can 
-12. As an Admin/Authorised User I can 
-13. As an Admin/Authorised User I can 
-14. As an Admin/Authorised User I can 
-15. As an Admin/User I can 
+### Admin/Authorised Users
+19. As an Admin / Authorised User I can log in so that I can access the back end of the site (Must have)
+20. As an Admin / Authorised User I can manually add a booking so that I can book a slot if someone phones, or emails the business (Should have)
+21. As an Admin / Authorised User I can accept or reject bookings so that we avoid double bookings (Must have)
+22. As an Admin I can login to add or remove items from the product catalogue so that we can add more products or remove them (Must have)
+23. As a Admin I can create, read, update and delete product item from the database so that we can add, remove, rename and view all our catalogue products (Must have)
+24. As an Admin / Authorised User I can search through bookings and menus so that I can find the information I am looking for	 (Should have)
+25. As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day (Should have)
 
 ### Site Owner
-16. As a Site Owner I can v
-17. As a Site Owner I can 
-18. As a Site Owner I can 
+26. As a Site Owner I can provide a fully responsive site for my customers so that they have a good user experience (Must have)
+27. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors (Must have)
+
+# Epics & Kanbans 
+- Epics have been used to track chunks of issues categorised into milestones.
+- GitHub Kanban was used to track all open user stories.
+- Todo, In progress and Done were used to track all issues in the Kanban
+
+<details><summary>Epics</summary>
 
 [Back to Top](<#table-of-content>)
 ## Technical Design
