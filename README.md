@@ -476,18 +476,17 @@ The wireframes were created using Balsamiq
 ### HTML Validation
 The W3C Markup Validation Service was used to validate the HTML code for the webiste. All pages have passed the checks and have no errors - this can be checked at any time.
 - Home [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2F)
-- Register [results]
-- Login [results]
-- Logout [results]
-- Bookings [results]
-- Edit Booking [results]
-- Cancel Booking [results]
-- Catalogue [results]
-- Blog [results]
-- Blog Expanded [results]
-- Contact us [results]
-- Confirmed [results]
-- 404 page [results]
+- Register [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Faccounts%2Fsignup%2F)
+- Login [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Faccounts%2Flogin%2F)
+- Logout [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Faccounts%2Flogout%2F)
+- Bookings [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Fvisit_store)
+- Edit Booking [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Fedit_booking%2F15)
+- Cancel Booking [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Fcancel_booking%2F15)
+- Catalogue [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Fcatalogue)
+- Blog [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Fblog%2F)
+- Blog Expanded [results](https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Fthe-timeless-influence%2F)
+- Contact us [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Fcontactus%2F)
+- 404 page [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fwinpea-world-560ce7552450.herokuapp.com%2Fvisit_stores%2F) - 404 is detected
 
 ## Testing
 
