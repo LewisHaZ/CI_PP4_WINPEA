@@ -7,7 +7,7 @@ from django.contrib.auth.models import User
 class Contact(models.Model):
     """
     A class for the contact us
-    model 
+    model
     """
     message_id = models.AutoField(primary_key=True)
     created_date = models.DateTimeField(auto_now_add=True)

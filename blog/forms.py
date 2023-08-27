@@ -1,6 +1,5 @@
 # 3rd Party Imports
 from django import forms
-
 # Internal
 from . models import Comment
 

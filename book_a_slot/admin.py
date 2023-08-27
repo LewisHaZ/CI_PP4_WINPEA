@@ -8,8 +8,8 @@ from .models import Slot, Booking
 @admin.register(Slot)
 class SlotAdmin(admin.ModelAdmin):
     """
-    A class for the slot admin to be able to 
-    edit how many slots (groups) are available 
+    A class for the slot admin to be able to
+    edit how many slots (groups) are available
     at each time slot.
     """
     list_display = ('slot_id', 'slot_name', 'max_slots')

@@ -25,7 +25,7 @@ class PostAdmin(SummernoteModelAdmin):
 class CommentAdmin(admin.ModelAdmin):
     """
     A class for the Comment Admin that will
-    be able to control content on the 
+    be able to control content on the
     Blog page
     """
 

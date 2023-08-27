@@ -4,7 +4,7 @@ from django.views import generic, View
 from django.contrib import messages
 from django.core.paginator import Paginator
 
-# Internal 
+# Internal
 from .models import Post
 from .forms import CommentForm
 
