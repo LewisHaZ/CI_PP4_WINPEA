@@ -949,6 +949,7 @@ You can clone the repository by following these steps:
 
 ##### Back to [top](#table-of-contents)<hr>
 
+## Credits
 ### Media
 - [Favicon](https://favicon.io/)
 - [Images](https://www.pexels.com/)
