@@ -29,9 +29,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['winpea-world.herokuapp.com', 'winpea-world-560ce7552450.herokuapp.com', 'localhost', '8000-lewishaz-cipp4winpea-mzbticeyhxd.ws-eu104.gitpod.io', 'https://ui.dev/amiresponsive']
+ALLOWED_HOSTS = ['winpea-world.herokuapp.com', 'winpea-world-560ce7552450.herokuapp.com', 'localhost', '8000-lewishaz-cipp4winpea-mzbticeyhxd.ws-eu104.gitpod.io']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-lewishaz-cipp4winpea-mzbticeyhxd.ws-eu104.gitpod.io/', 'https://www.heroku.com/']
 
@@ -66,6 +65,7 @@ INSTALLED_APPS = [
 
 SITE_ID = 1
 ACCOUNT_EMAIL_VERIFICATION = 'none'
+
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 
