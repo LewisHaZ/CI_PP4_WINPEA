@@ -46,6 +46,14 @@ body {
     max-width: 250px;
 }
 
+
+.img-catalogue {
+    height: auto;
+    width: auto;
+    max-height: 144px;
+    max-width: 300px;
+}
+
 .excerpt{
     color: #353535be;
 }
