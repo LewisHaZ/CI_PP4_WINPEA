@@ -34,6 +34,7 @@ ALLOWED_HOSTS = ['winpea-world.herokuapp.com', 'winpea-world-560ce7552450.heroku
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-lewishaz-cipp4winpea-mzbticeyhxd.ws-eu104.gitpod.io/', 'https://www.heroku.com/']
 
+X_FRAME_OPTIONS = 'OFF'
 
 # Application definition
 
