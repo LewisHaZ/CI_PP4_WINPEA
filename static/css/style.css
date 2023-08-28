@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
 
 a {
-    color: #ffff;
+    color: #0000;
     text-decoration: none;
 }
 
@@ -23,7 +23,7 @@ body {
 }
 
 .card {
-    background-color: #a19d9d;
+    background-color: #0000;
 }
 
 .card-img-top{
