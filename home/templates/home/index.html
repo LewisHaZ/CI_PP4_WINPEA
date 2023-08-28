@@ -35,7 +35,7 @@
     <div class="row d-flex my-5 justify-content-center text-center">
         <div class="col-10 col-md-3 col-lg-2 m-3 grow card shadow">
             <a href="{% url 'visit_store' %}" class="text-decoration-none">
-                    <img src="{% static 'images/image-of-store.webp' %}" class="card-img-top rounded img-responsive" alt="Image of the store">
+                    <img src="{% static 'images/image-of-store.webp' %}" class="img-fluid" alt="Image of the store">
                 </a>
                 <div class="row mt-3 mb-3">
                     <a href="{% url 'visit_store' %}"><h2>Book a Slot</h2></a>
@@ -44,7 +44,7 @@
 
         <div class="col-10 col-md-3 col-lg-2 m-3 grow card shadow">
             <a href="{% url 'catalogue_menu' %}" class="text-decoration-none">
-                    <img src="{% static 'images/image-catalogue.webp' %}" class="card-img-top rounded img-responsive" alt="Image of product">
+                    <img src="{% static 'images/image-catalogue.webp' %}" class="img-fluid" alt="Image of product">
                 </a>
                 <div class="row mt-3 mb-3">
                     <a href="{% url 'catalogue_menu' %}"><h2>Catalogue</h2></a>
@@ -54,7 +54,7 @@
         <div class="col-10 col-md-3 col-lg-2 m-3 grow card shadow">
             <a href="{% url 'blog' %}" class="text-decoration-none">
                     <img src="{% static 'images/winpea-logo-community.webp' %}"
-                    class="card-img-top rounded img-responsive" alt="Image of group of people">
+                    class="img-fluid" alt="Image of group of people">
                 </a>
                 <div class="row mt-3 mb-3">
                     <a href="{% url 'blog' %}"><h2>Our Community</h2></a>
@@ -83,7 +83,7 @@
                 </ul>
                 <p><em>Please contact us to schedule your viewing today!</em></p>
         <div class="col-12 mt-5">
-            <a href="{% url 'contactus' %}"><img class="" src="{% static 'images/special-event-promo.webp' %}" alt="photo of woman with wedding dress and Jewellery"></a> 
+            <a href="{% url 'contactus' %}"><img class="img-fluid" src="{% static 'images/special-event-promo.webp' %}" alt="photo of woman with wedding dress and Jewellery"></a> 
         </div>
     </div>
 </div>
