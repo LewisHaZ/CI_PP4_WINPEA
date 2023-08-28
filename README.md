@@ -24,6 +24,7 @@ Deployed Site:
   - [Validation](#validation)
   - [Testing](#testing)
     - [Manual testing](#manual-testing)
+  - [Browsers Compatibility](#browser-compatibility)
   - [Bugs](#bugs)
   - [Heroku Deployment](#heroku-deployment)
   - [Credits](#credits)
@@ -487,13 +488,13 @@ The W3C Markup Validation Service was used to validate the HTML code for the web
 ### CSS Validation
 The W3C Jigsaw CSS Validation Service
 <details><summary>style.css</summary>
-<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/css-validaiton.png">
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/css-validation.png">
 </details><hr>
 
 ### JS Validation
 JSLint: The JavaScript Code Quality Coverage Tool
 <details><summary>script.js</summary>
-<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/js-validaiton.png">
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/js-validation.png">
 </details><hr>
 
 ### PEP8 Validation
@@ -602,7 +603,7 @@ Code Institute's CI Python Linter was used to validate all Python files.
 </details>
 
 <details><summary>views.py</summary>
-<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-views-contacus.png">
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-views-contactus.png">
 </details>
 
 <details><summary>forms.py</summary>
@@ -618,7 +619,7 @@ Performance of the site, best practices and SEO tested.
 </details>
 
 <details><summary>Register</summary>
-<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-regsiter.png">
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-register.png">
 </details>
 
 <details><summary>Login</summary>
@@ -638,7 +639,7 @@ Performance of the site, best practices and SEO tested.
 </details>
 
 <details><summary>Blog Expanded</summary>
-<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-blog=expanded.png">
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-blog-expanded.png">
 </details>
 
 <details><summary>Book</summary>
@@ -896,6 +897,32 @@ Wave used to validate the styles, links and colours used on the site.
 | All bookings were able to be viewed by all users | Add code to make sure that users could only view their own bookings |
 | Users able to enter invalid content on login and register pages | add form content such as required and format |
 | Double bookings | Re-coded bookings app to run a uniquetogether which checked all the date, time, slot content and told the user the booking is unavailable |
+
+## Browser Compatibility
+
+<details><summary>Samsung Galaxy S22</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/browser-testing-1.png">
+</details>
+
+<details><summary>iPhone 13</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/browser-testing-2.png">
+</details>
+
+<details><summary>Google Pixel 6 Pro</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/browser-testing-3.png">
+</details>
+
+<details><summary>Google Chrome (latest ver) on Windows 11</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/browser-testing-4.jpg">
+</details>
+
+<details><summary>Mozilla (latest ver) on Windows 11 (latest ver)</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/browser-testing-5.jpg">
+</details>
+
+<details><summary>Edge (latest ver) on Windows 11</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/browser-testing-6.jpg">
+</details>
 
 ### Heroku Deployment
 
