@@ -21,6 +21,7 @@ Deployed Site:
     - [Wireframes](#wireframes)
   - [Technologies Used](#technologies-used)
   - [Features](#features)
+  - [Feature testing](#feature-testing)
   - [Validation](#validation)
   - [Testing](#testing)
     - [Manual testing](#manual-testing)
@@ -304,7 +305,9 @@ The wireframes were created using Balsamiq
 <details><summary>See feature images</summary>
 
 ![Home page](docs/features/features-homepage.jpg)
-</details> 
+</details>
+
+User stories covered: 1, 4
 
 ### Logo & Navigation
 - Custom logo for the business
@@ -320,6 +323,8 @@ The wireframes were created using Balsamiq
 ![nav](docs/features/features-navbar-small.png)
 </details>
 
+User stories covered: 1, 4
+
 ### Footer
 - Contains social media links and copyright
 - displayed across all pages
@@ -329,6 +334,8 @@ The wireframes were created using Balsamiq
 ![Footer](docs/features/features-footer.png)
 </details>
 
+User stories covered: 4
+
 ### Sign up / Register
 - Allow users to register an acoount
 - Username and password is required, email is optional
@@ -337,6 +344,8 @@ The wireframes were created using Balsamiq
 
 ![Register](docs/features/features-register.png)
 </details>
+
+User stories covered: 11, 13
 
 ### Login
 - User can login to create a booking, view bookings, edit and delete bookings
@@ -348,6 +357,8 @@ The wireframes were created using Balsamiq
 ![Login](docs/features/features-login-incorrect.png)
 </details>
 
+User stories covered: 12, 13
+
 ### Logout
 - Allows the user to securely log out
 - Ask user if they are sure they want to log out
@@ -356,6 +367,8 @@ The wireframes were created using Balsamiq
 
 ![Logout](docs/features/features-logout.png)
 </details>
+
+User stories covered: 13
 
 ### Book
 - Allows the user to book a slot using the booking form
@@ -370,6 +383,8 @@ The wireframes were created using Balsamiq
 ![Book](docs/features/features-booking-slot-valid.png)
 </details>
 
+User stories covered: 5, 16, 18
+
 ### My Bookings
 - Allows the user to see all their bookings in a paginated layout, 4 per page
 - If the booking is older than today it is automatically expired for the user
@@ -380,6 +395,8 @@ The wireframes were created using Balsamiq
 ![My Bookings](docs/features/features-my-bookings.png)
 </details>
 
+User stories covered: 8
+
 
 ### Edit Booking
 - Allows the user to edit their booking to another date, time, guest count and slot
@@ -388,6 +405,7 @@ The wireframes were created using Balsamiq
 ![Edit Booking](docs/features/features-edit-booking.png)
 </details>
 
+User stories covered: 6
 
 ### Cancel Booking 
 - Allows the user to cancel their booking, asks user are they sure
@@ -396,6 +414,8 @@ The wireframes were created using Balsamiq
 
 ![Cancel Booking](docs/features/features-booking-cancel.png)
 </details>
+
+User stories covered: 7
 
 ### Catalogue
 - The catalogue displays all available and out of stock products
@@ -408,6 +428,8 @@ The wireframes were created using Balsamiq
 ![Catalogue](docs/features/features-catalogue.png)
 </details>
 
+User stories covered: 15
+
 ### Blog
 - The blog displays each post made by a staff member
 - Paginations is used to display 4 posts per page
@@ -416,6 +438,8 @@ The wireframes were created using Balsamiq
 
 ![Blog](docs/features/features-blog.png)
 </details>
+
+User stories covered: 17
 
 ### Blog Expanded
 - Expands into the selected blog the user wishes to read
@@ -427,6 +451,8 @@ The wireframes were created using Balsamiq
 
 ![Blog Expanded](docs/features/features-blog-2-1.jpg)
 </details>
+
+User stories covered: 14
 
 ### Comments
 - Comments made are set to pending approval status to ensure nothing explicit is displayed
@@ -448,6 +474,8 @@ The wireframes were created using Balsamiq
 ![Contact Us](docs/features/features-contactus.png)
 </details>
 
+User stories covered: 2
+
 ### Social Media Links
 - A logo and link is used for each social media displayed
 - All links open in a new tab to ensure user is not directed away from the business
@@ -458,6 +486,8 @@ The wireframes were created using Balsamiq
 ![Social Media Links](docs/features/features-social-links.png)
 </details>
 
+User stories covered: 2
+
 ### Pagination
 - Pagination is used on the bookings list and the blog page
 - Ensures the page is kept tidy as only 4 items are displayed per page
@@ -467,7 +497,45 @@ The wireframes were created using Balsamiq
 ![Pagination](docs/features/features-page-pagination.png)
 </details>
 
+User stories covered: 1, 26
+
 ##### Back to [top](#table-of-contents)<hr>
+
+## Feature testing 
+1. Create a booking
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'book' link in the navigation bar & fill in the details and submit | Booking if available will be created | Works as expected |
+2. Edit a booking
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'my bookings' link in the navigation bar and click edit | Booking is able to edited and re-submitted if available | Works as expected |
+3. Delete a booking
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'my bookings' link in the navigation bar and click cancel | Booking is able to cancelled upon prompt acceptance | Works as expected |
+4. Make a comment
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Be a logged in user on the blog article and fill in comment field, click submit | Comment is sent to admin for approval, then posted if accepted | Works as expected |
+5. Register an account
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'register' link in the navigation bar and fill in details | Account is created if all fields are filled out correctly | Works as expected |
+6. Login
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'login' link in the navigation bar and fill in details | Account is accessed if the details are filled out correctly and match an account | Works as expected |
+7. Logout
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'logout' link in the navigation bar and press logout when prompted | Account is logged out of and user is returned to homepage | Works as expected |
+8. Return to homepage
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'home' link in the navigation bar and press logout when prompted | User is returned to home page | Works as expected |
+| Click on the 'logout' website logo in the top left |  User is returned to home page | Works as expected |
+
 
 ## Validation
 ### HTML Validation
