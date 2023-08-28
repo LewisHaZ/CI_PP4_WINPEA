@@ -703,13 +703,14 @@ Wave used to validate the styles, links and colours used on the site.
 <img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-wave-contactus.png">
 </details>
 
-
+<details><summary>404</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-wave-404.png">
+</details>
 
 
 ## Testing
 
-1. Manual Testing
-2. Automated Testing
+### Manual Testing
 
 1. As a User I can navigate across the site so that I can move to each feature of the site easily
 
@@ -726,117 +727,219 @@ Wave used to validate the styles, links and colours used on the site.
 | Click on the 'Logout' link in the navigation bar | Logout page will load| Works as expected |
 
 
+2. As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials (Must have)
 
-* 
-* 
-* 
-* 
-* 
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Contact us' link in the navigation bar | Contact us page will load and you can view content | Works as expected |
 
+3. As a Site Owner I can provide a contact us page so that users can get in touch with my business (Must have)
 
-### Manual Testing
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Contact us' link in the navigation bar | Contact us page will load and you can view content | Works as expected |
 
-<details><summary>View manual testing</summary>
+4. As a User I can use a navbar, footer, and social icons so that I can navigate the site, access menus, and access socials (Must have)
 
-### Testing User Stories
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on a selection from the navigation bar | selected page will load and you can view content | Works as expected |
+| Scroll to the bottom of the page | view social media content and click to go to new tab | Works as expected |
 
- User:
-1. As a User, I would like to...
+5. As a User I can create a booking by selecting a date and time so that I can reserve my slot (Must have)
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|||||
-|Navbar|Click links|Direction to page|Navigation is successful|
-<details><summary>Images</summary>
-![](https://)
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Navigate to booking page | select the time, date and slot you deserve and submit | Works as expected |
 
-</details>
-</details>
+6. As a User I can update my booking so that I can choose another available time and date (Must have)
 
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Navigate to my bookings page | select a different available time, date and slot then re-submit | Works as expected |
 
+7. As a User I can delete my booking so that I can cancel my slot (Must have)
 
-Site Owner
-8. As the site owner, I would like...
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Navigate to my bookings page | click cancel booking and proceed once prompted if you want to cancel the booking | Works as expected |
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|Responsivness|Site viewport is resized|Good view on mobile|Site is responsive|
-|Validation|Form data entered|Errors are displayed where applicable| Success |
+8. As a user I can view my booking so that I can remind myself of the date and time I have booked (Must have)
 
-<details><summary>Images</summary>
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Navigate to my bookings page | view the content of the booking you have in displayed on the card | Works as expected |
 
-</details>
+9. As a User I can I am notified so that I know my action of creation, edit, or deletion of a booking has been successful (Must have)
 
-### Automated Testing
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Make a successful booking | Message popup is displayed to say the action was successful | Works as expected |
+| Edit a booking | Message popup is displayed to say the action was successful | Works as expected |
+| Delete a booking | Message popup is displayed to say the action was successful | Works as expected |
 
- <details><summary>View automated testing</summary>
+10. As a User I can register as prompted so that I can make a booking if I wish reserve a slot (Must have)
 
-- Automated testing was done using the unittest and coverage librararies for Python.
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Navigate to book page | Message is displayed to say you need to login to book | Works as expected |
 
+11. As a User I can register to create an account so that my details are stored for faster booking in future (Must have)
 
-### Unit Tests
-- Test...
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Navigate to register page | User is able to enter details and successfully register | Works as expected |
 
-<img src="">
+12. As a user I can login so that I can book a slot (Must have)
 
-- Test results....
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Navigate to login page | User is able to enter details and successfully login | Works as expected |
 
-<img src="">
+13. As a user I can see my login status so that I know if I am logged in or not (Must have)
 
-### Coverage 
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Home page | User is able to see they are logged in our out with the navbar element | Works as expected |
 
-- Coverage was installed via the terminal, pip install coverage
-<img src="">
+14. As a User I can view the site's blog so that I can learn additional information and read articles (Should have)
 
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Navigate to site's blog | User is able to see the preview of each blog | Works as expected |
 
-- Coverage was then used to test using the following...
-<img src="">
+15. As a User I can view the product catalogue so that I can decide whether to visit the store (Must have)
 
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Navigate to site's catalogue | User is able to see the products of the brand and each category | Works as expected |
 
-- The results of the test were the following:
-<img src="">
+16. As a User I cannot book a date in the past so that my booking is valid (Must have)
 
-- A HTML report was also generated using the command, coverage html
-<img src="">
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| View a expired booking | User is not able to access the booking as it is deprecated once it is expired | Works as expected |
 
-</details>
+17. As a User I can view blog posts page by page so that I can browse without seeing an overloaded page (Should have)
 
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| View the blog page | User is able to access the blog page and have a good viewing experience with page paginator | Works as expected |
 
+18. As a User I can not book a slot already booked so that my booking is valid and not double booked (Must have)
 
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Double book a slot | User is not able to book a slot that is already booked and is prompted to book another slot | Works as expected |
 
+19. As an Admin / Authorised User I can log in so that I can access the back end of the site (Must have)
 
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Log in to admin panel | Admin panel is displayed with all models | Works as expected |
 
-[Back to Top](<#table-of-content>)
+20. As an Admin / Authorised User I can manually add a booking so that I can book a slot if someone phones, or emails the business (Should have)
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| View admin panel options and add a booking for a customer | Customer booking is succesful within admin panel and can be changed at any time | Works as expected |
+
+21. As an Admin / Authorised User I can accept or reject bookings so that we avoid double bookings (Must have)
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| View admin panel options and accept or reject bookings | Customer booking is succesful within admin panel and can be changed at any time | Works as expected |
+
+22. As an Admin I can login to add or remove items from the product catalogue so that we can add more products or remove them (Must have)
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Login to admin panel and catalogue | Products can be adjusted to their current availability | Works as expected |
+
+23. As a Admin I can create, read, update and delete product item from the database so that we can add, remove, rename and view all our catalogue products (Must have)
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| View admin panel options and access catalogue panel to make changes | Products can be added, removed or edited at any time through admin panel | Works as expected |
+
+24. As an Admin / Authorised User I can search through bookings and menus so that I can find the information I am looking for (Should have)
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| View admin panel options and access bookings app | Panel of bookings is displayed for admin or staff use | Works as expected |
+
+25. As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day (Should have)
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| View admin panel options and access bookings app | Panel of bookings is displayed for admin or staff use | Works as expected |
+
+26. As a Site Owner I can provide a fully responsive site for my customers so that they have a good user experience (Must have)
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Navigate each page and test all features | Website offers its intended purpose and flows well | Works as expected |
+
+27. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors (Must have)
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Navigate each page and test all features | Website offers its intended purpose and flows well | Works as expected |
+| Navigate admin panel and test all sections| Admin panel offers its intended purpose and works efficiently | Works as expected |
+
+##### Back to [top](#table-of-contents)<hr>
+
 ## Bugs
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 | **Bug** | **Fix** |
-| Bug I had | I fixed it by... |
+| CSS not loading in Heroku deployment | ran collectstatic in terminal |
+| Catalogue images displaying too large on mobile | Use bootstrap class img-fluid |
+| Login page link not working | add the correct static link |
+| All bookings were able to be viewed by all users | Add code to make sure that users could only view their own bookings |
+| Users able to enter invalid content on login and register pages | add form content such as required and format |
+| Double bookings | Re-coded bookings app to run a uniquetogether which checked all the date, time, slot content and told the user the booking is unavailable |
 
-
-
-[Back to Top](<#table-of-content>)
-## Deployment
-### Heroku / Firebase
+### Heroku Deployment
 
 [Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
-1. Log in to your account at heroku.com.
-2. Create a new app, add a unique app name and choose your region.
-3. Click on create app.
-4. Go to "Settings".
-5. Under Config Vars store any sensitive data in .json file. Name 'Key' field, copy the .json file paste it to 'Value' field. Also add a key 'PORT' and value '8000'.
-6. Add required buildpacks. For this project, I set up 'Python' and 'node.js' in that order.
-7. Go to "Deploy" and select "GitHub" in "Deployment method"
-8. To link up the Heroku app to our Github repository code enter your repository name, click 'Search' and then 'Connect' when it shows below.
-9.  Choose the branch you want to buid your app from.
-10. If prefered, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository
-11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a 'View' button to take you to your deployed link.
+
+This application has been deployed from Github using Heroku. Here's how:
+
+1. Create an account at heroku.com
+2. Create an app, give it a name for such as CI_PP4_WINPEA, and select a region
+3. Under resources search for postgres, and add a Postgres database to the app
+
+Heroku Postgres
+
+1. Note the DATABASE_URL, this can be set as an environment variable in Heroku and your local deployment(env.py)
+2. Install the plugins dj-database-url and psycopg2-binary.
+3. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
+4. Create a Procfile with the text: web: gunicorn the_diplomat.wsgi
+5. In the settings.py ensure the connection is to the Heroku postgres database, no indentation if you are not using a seperate test database.
+I store mine in env.py
+6. Ensure debug is set to false in the settings.py file
+7. Add localhost, and ci-pp4-the-diplomat.herokuapp.com to the ALLOWED_HOSTS variable in settings.py
+8. Run "python3 manage.py showmigrations" to check the status of the migrations
+9. Run "python3 manage.py migrate" to migrate the database
+10. Run "python3 manage.py createsuperuser" to create a super/admin user
+11. Run "python3 manage.py loaddata categories.json" on the categories file in products/fixtures to create the categories
+12. Run "python3 manage.py loaddata products.json" on the products file in products/fixtures to create the products
+13. Install gunicorn and add it to the requirements.txt file using the command pip3 freeze > requirements.txt
+14. Disable collectstatic in Heroku before any code is pushed using the command heroku config:set DISABLE_COLLECTSTATIC=1 -a CI_PP4_WINPEA
+15. Ensure the correct environment variables are set in Heroku
+16. Connect the app to GitHub, and enable automatic deploys from main if you wish
+17. Click deploy to deploy your application to Heroku for the first time
+18. Click on the link provided to access the application
+19. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
+<hr>
 
 ### Fork Repository
 To fork the repository by following these steps:
 1. Go to the GitHub repository
 2. Click on Fork button in upper right hand corner
+<hr>
 
 ### Clone Repository
 You can clone the repository by following these steps:
@@ -848,17 +951,14 @@ You can clone the repository by following these steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7.Press Enter to create your local clone.
 
-[Back to Top](<#table-of-content>)
-## Credits
-
+##### Back to [top](#table-of-contents)<hr>
 
 ### Media
-- [Favicon](https://favicon.io/): Witch Icon</a>
-- [Card Images](https://www.pexels.com/)</a>
+- [Favicon](https://favicon.io/)
+- [Images](https://www.pexels.com/)
 
 ### Code
-- [Site](https://www.google.com)
-
+Bootstrap classes such as img-fluid & carousel used.
 
 ## Acknowledgements
 
@@ -866,6 +966,5 @@ You can clone the repository by following these steps:
 - Code Institute
 - Mo Shami
 - My friends, family and my wonderful wife.
-- 
 
-[Back to Top](<#table-of-content>)
+
