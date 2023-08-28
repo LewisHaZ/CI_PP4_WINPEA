@@ -613,7 +613,99 @@ Code Institute's CI Python Linter was used to validate all Python files.
 <img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-forms-contactus.png">
 </details>
 
+### Lighthouse
+
+Performance of the site, best practices and SEO tested.
+
+
+### Desktop
+<details><summary>Index</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-home.png">
+</details>
+
+<details><summary>Register</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-regsiter.png">
+</details>
+
+<details><summary>Login</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-login.png">
+</details>
+
+<details><summary>Logout</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-logout.png">
+</details>
+
+<details><summary>Catalogue</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-catalogue.png">
+</details>
+
+<details><summary>Blog</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-blog.png">
+</details>
+
+<details><summary>Blog Expanded</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-blog=expanded.png">
+</details>
+
+<details><summary>Book</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-book.png">
+</details>
+
+<details><summary>Booking List</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-booking-list.png">
+</details>
+
+<details><summary>Edit Booking</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-edit-booking.png">
+</details>
+
+<details><summary>Cancel Booking</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-cancel-booking.png">
+</details>
+
+<details><summary>Contact Us</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-contactus.png">
+</details>
+
+#### Mobile
+
+<details><summary>Index</summary>
+
+
+<details><summary>Register</summary>
+
+
+<details><summary>Login</summary>
+
+
+<details><summary>Logout</summary>
+
+
+<details><summary>Catalogue</summary>
+
+
+<details><summary>Blog</summary>
+
+
+<details><summary>Blog Expanded</summary>
+
+
+<details><summary>Book</summary>
+
+
+<details><summary>Booking List</summary>
+
+
+<details><summary>Edit Booking</summary>
+
+
+<details><summary>Cancel Booking</summary>
+
+
+<details><summary>Contact Us</summary>
+
 ## Testing
+
 
 * 
 * 
