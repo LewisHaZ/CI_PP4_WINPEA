@@ -1,10 +1,9 @@
 # Winpea World - Jewellery Store 
  
-![Am I Responsive](docs/am-i-responsive.png)
 Developer: **Lewis Hazelwood**
 
 Deployed Site:
-[Winpea world - site](https://winpea-world-560ce7552450.herokuapp.com/)
+[Winpea world ](https://winpea-world-560ce7552450.herokuapp.com/)
 
 
 ## Table of Contents
