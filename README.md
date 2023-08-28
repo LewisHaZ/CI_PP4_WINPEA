@@ -1,4 +1,4 @@
-# ** Winpea World - Jewellery Store ** 
+# Winpea World - Jewellery Store 
  
 ![Am I Responsive](docs/am-i-responsive.png)
 Developer: **Lewis Hazelwood**
