@@ -617,8 +617,6 @@ Code Institute's CI Python Linter was used to validate all Python files.
 
 Performance of the site, best practices and SEO tested.
 
-
-### Desktop
 <details><summary>Index</summary>
 <img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-home.png">
 </details>
@@ -667,44 +665,66 @@ Performance of the site, best practices and SEO tested.
 <img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-lighthouse-desktop-contactus.png">
 </details>
 
-#### Mobile
-
+### Wave Validation
+Wave used to validate the styles, links and colours used on the site.
 <details><summary>Index</summary>
-
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-wave-index.png">
+</details>
 
 <details><summary>Register</summary>
-
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-wave-register.png">
+</details>
 
 <details><summary>Login</summary>
-
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-wave-login.png">
+</details>
 
 <details><summary>Logout</summary>
-
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-wave-logout.png">
+</details>
 
 <details><summary>Catalogue</summary>
-
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-wave-catalogue.png">
+</details>
 
 <details><summary>Blog</summary>
-
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-wave-blog.png">
+</details>
 
 <details><summary>Blog Expanded</summary>
-
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-wave-blog-expanded.png">
+</details>
 
 <details><summary>Book</summary>
-
-
-<details><summary>Booking List</summary>
-
-
-<details><summary>Edit Booking</summary>
-
-
-<details><summary>Cancel Booking</summary>
-
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-wave-book.png">
+</details>
 
 <details><summary>Contact Us</summary>
+<img src="https://raw.githubusercontent.com/LewisHaZ/CI_PP4_WINPEA/main/docs/validation/validation-wave-contactus.png">
+</details>
+
+
+
 
 ## Testing
+
+1. Manual Testing
+2. Automated Testing
+
+1. As a User I can navigate across the site so that I can move to each feature of the site easily
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Home' link in the navigation bar | Homepage will load| Works as expected |
+| Click on the 'Register' link in the navigation bar | Sign up page will load| Works as expected |
+| Click on the 'Login' link in the navigation bar | Login page will load| Works as expected |
+| Click on the 'Catalogue' link in the navigation bar | Catalogue page will load| Works as expected |
+| Click on the 'Blog' link in the navigation bar | Blog page will load| Works as expected |
+| Click on the 'Book' link in the navigation bar | Reservations page will load| Works as expected |
+| Click on the 'Contact Us' link in the navigation bar | Contact us page will load| Works as expected |
+| Click on the 'My Bookings' link in the navigation bar | Booking list page will load| Works as expected |
+| Click on the 'Logout' link in the navigation bar | Logout page will load| Works as expected |
+
 
 
 * 

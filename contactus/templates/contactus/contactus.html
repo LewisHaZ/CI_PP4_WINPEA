@@ -8,15 +8,15 @@
         <div class="col-md-6">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-12 p-5 bg-light rounded booking-card">
+                    <div class="col-12 p-5 rounded booking-card">
                         <!-- Display if user is not logged in -->
                         {% if not user.is_authenticated %}
                         <div class="row text-center">
                             <h3>Contact Us</h3>
                             <p>Please login to get in Contact!</p>
                         </div>
-                            <div class="text-center link_color">
-                           <a href="{% url 'account_login' %}">Go to Login Page</a>
+                            <div class="text-center">
+                           <a class="link_color" href="{% url 'account_login' %}">Go to Login Page</a>
                             </div>
                         {% else %}
                         <!-- Display form if user is logged in-->
